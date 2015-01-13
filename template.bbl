@@ -1,0 +1,214 @@
+\begin{thebibliography}{37}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Adler et~al.(2003)Adler, Huffman, Chang, Ferraro, Xie, Janowiak,
+  Rudolf, Schneider, Curtis, Bolvin et~al.}]{adler2003version}
+Adler, R.~F., Huffman, G.~J., Chang, A., Ferraro, R., Xie, P.-P., Janowiak, J.,
+  Rudolf, B., Schneider, U., Curtis, S., Bolvin, D., et~al.: The version-2
+  global precipitation climatology project (GPCP) monthly precipitation
+  analysis (1979-present), Journal of Hydrometeorology, 4, 1147--1167, 2003.
+
+\bibitem[{Aksoy et~al.(2006)Aksoy, Zhang, and
+  Nielsen-Gammon}]{aksoy2006ensemble}
+Aksoy, A., Zhang, F., and Nielsen-Gammon, J.~W.: Ensemble-based simultaneous
+  state and parameter estimation with MM5, Geophysical research letters, 33,
+  2006.
+
+\bibitem[{Allen et~al.(2000)Allen, Stott, Mitchell, Schnur, and
+  Delworth}]{allen2000quantifying}
+Allen, M.~R., Stott, P.~A., Mitchell, J.~F., Schnur, R., and Delworth, T.~L.:
+  Quantifying the uncertainty in forecasts of anthropogenic climate change,
+  Nature, 407, 617--620, 2000.
+
+\bibitem[{Barkstrom(1984)}]{barkstrom1984earth}
+Barkstrom, B.~R.: The earth radiation budget experiment (ERBE), Bulletin of the
+  American Meteorological Society, 65, 1170--1185, 1984.
+
+\bibitem[{Cameron et~al.(1999)Cameron, Beven, Tawn, Blazkova, and
+  Naden}]{cameron1999flood}
+Cameron, D., Beven, K.~J., Tawn, J., Blazkova, S., and Naden, P.: Flood
+  frequency estimation by continuous simulation for a gauged upland catchment
+  (with uncertainty), Journal of Hydrology, 219, 169--187, 1999.
+
+\bibitem[{Campolongo et~al.(2007)Campolongo, Cariboni, and
+  Saltelli}]{campolongo2007effective}
+Campolongo, F., Cariboni, J., and Saltelli, A.: An effective screening design
+  for sensitivity analysis of large models, Environmental modelling \&
+  software, 22, 1509--1518, 2007.
+
+\bibitem[{Carrassi and Vannitsem(2011)}]{carrassi2011state}
+Carrassi, A. and Vannitsem, S.: State and parameter estimation with the
+  extended Kalman filter: an alternative formulation of the model error
+  dynamics, Quarterly Journal of the Royal Meteorological Society, 137,
+  435--451, 2011.
+
+\bibitem[{DelSole and Yang(2010)}]{delsole2010state}
+DelSole, T. and Yang, X.: State and parameter estimation in stochastic
+  dynamical models, Physica D: Nonlinear Phenomena, 239, 1781--1788, 2010.
+
+\bibitem[{Gleckler et~al.(2008)Gleckler, Taylor, and
+  Doutriaux}]{gleckler2008performance}
+Gleckler, P.~J., Taylor, K.~E., and Doutriaux, C.: Performance metrics for
+  climate models, Journal of Geophysical Research: Atmospheres (1984--2012),
+  113, 2008.
+
+\bibitem[{Hack et~al.(1994)Hack, Boville, Kiehl, Rasch, and
+  Williamson}]{hack1994climate}
+Hack, J.~J., Boville, B., Kiehl, J., Rasch, P., and Williamson, D.: Climate
+  statistics from the National Center for Atmospheric Research community
+  climate model CCM2, Journal of Geophysical Research: Atmospheres
+  (1984--2012), 99, 20\,785--20\,813, 1994.
+
+\bibitem[{Hakkarainen et~al.(2012)Hakkarainen, Ilin, Solonen, Laine, Haario,
+  Tamminen, Oja, and J{\"a}rvinen}]{hakkarainen2012closure}
+Hakkarainen, J., Ilin, A., Solonen, A., Laine, M., Haario, H., Tamminen, J.,
+  Oja, E., and J{\"a}rvinen, H.: On closure parameter estimation in chaotic
+  systems, Nonlinear Processes in Geophysics, 19, 127--143, 2012.
+
+\bibitem[{Hararuk et~al.(2014)Hararuk, Xia, and Luo}]{hararuk2014evaluation}
+Hararuk, O., Xia, J., and Luo, Y.: Evaluation and improvement of a global land
+  model against soil carbon data using a Bayesian Markov chain Monte Carlo
+  method, Journal of Geophysical Research: Biogeosciences, 119, 403--417, 2014.
+
+\bibitem[{Jackson et~al.(2004)Jackson, Sen, and Stoffa}]{jackson2004efficient}
+Jackson, C., Sen, M.~K., and Stoffa, P.~L.: An efficient stochastic Bayesian
+  approach to optimal parameter and uncertainty estimation for climate model
+  predictions, Journal of Climate, 17, 2828--2841, 2004.
+
+\bibitem[{Jackson et~al.(2008)Jackson, Sen, Huerta, Deng, and
+  Bowman}]{jackson2008error}
+Jackson, C.~S., Sen, M.~K., Huerta, G., Deng, Y., and Bowman, K.~P.: Error
+  reduction and convergence in climate prediction, Journal of Climate, 21,
+  6698--6709, 2008.
+
+\bibitem[{Li et~al.(2013)Li, Wang, Dong, Liu, Shen, Hu, Sun, Wang, Huang, Shi
+  et~al.}]{li2013evaluation}
+Li, L., Wang, B., Dong, L., Liu, L., Shen, S., Hu, N., Sun, W., Wang, Y.,
+  Huang, W., Shi, X., et~al.: Evaluation of grid-point atmospheric model of IAP
+  LASG version 2 (GAMIL2), Advances in Atmospheric Sciences, 30, 855--867,
+  2013.
+
+\bibitem[{Morris(1991)}]{morris1991factorial}
+Morris, M.~D.: Factorial sampling plans for preliminary computational
+  experiments, Technometrics, 33, 161--174, 1991.
+
+\bibitem[{Morrison and Gettelman(2008)}]{morrison2008new}
+Morrison, H. and Gettelman, A.: A new two-moment bulk stratiform cloud
+  microphysics scheme in the Community Atmosphere Model, version 3 (CAM3). Part
+  I: Description and numerical tests, Journal of Climate, 21, 3642--3659, 2008.
+
+\bibitem[{Murphy et~al.(2004)Murphy, Sexton, Barnett, Jones, Webb, Collins, and
+  Stainforth}]{murphy2004quantification}
+Murphy, J.~M., Sexton, D.~M., Barnett, D.~N., Jones, G.~S., Webb, M.~J.,
+  Collins, M., and Stainforth, D.~A.: Quantification of modelling uncertainties
+  in a large ensemble of climate change simulations, Nature, 430, 768--772,
+  2004.
+
+\bibitem[{Nelder and Mead(1965)}]{nelder1965simplex}
+Nelder, J.~A. and Mead, R.: A simplex method for function minimization, The
+  computer journal, 7, 308--313, 1965.
+
+\bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling, and
+  Flannery}]{press1992numerical}
+Press, W., Teukolsky, S., Vetterling, W., and Flannery, B.: Numerical Recipes
+  in Fortran, Cambridge Univ, Press, Cambridge, p.~70, 1992.
+
+\bibitem[{Reichler and Kim(2008)}]{reichler2008well}
+Reichler, T. and Kim, J.: How well do coupled models simulate today's climate?,
+  Bulletin of the American Meteorological Society, 89, 303--311, 2008.
+
+\bibitem[{Rucong(1994)}]{rucong1994two}
+Rucong, Y.: A two—step shape—preserving advection scheme, Advances in
+  Atmospheric Sciences, 11, 479--490, 1994.
+
+\bibitem[{Severijns and Hazeleger(2005)}]{severijns2005optimizing}
+Severijns, C. and Hazeleger, W.: Optimizing parameters in an atmospheric
+  general circulation model, Journal of climate, 18, 3527--3535, 2005.
+
+\bibitem[{Simmons et~al.(2007)Simmons, Uppala, Dee, and
+  Kobayashi}]{simmons2007era}
+Simmons, A., Uppala, S., Dee, D., and Kobayashi, S.: ERA-Interim: New ECMWF
+  reanalysis products from 1989 onwards, ECMWF newsletter, 110, 25--35, 2007.
+
+\bibitem[{Snyder et~al.(2008)Snyder, Bengtsson, Bickel, and
+  Anderson}]{snyder2008obstacles}
+Snyder, C., Bengtsson, T., Bickel, P., and Anderson, J.: Obstacles to
+  high-dimensional particle filtering, Monthly Weather Review, 136, 4629--4640,
+  2008.
+
+\bibitem[{Sobol(2001)}]{sobol2001global}
+Sobol, I.~M.: Global sensitivity indices for nonlinear mathematical models and
+  their Monte Carlo estimates, Mathematics and computers in simulation, 55,
+  271--280, 2001.
+
+\bibitem[{Sun et~al.(2013)Sun, Hou, Huang, Tian, and
+  Ruby~Leung}]{sun2013inverse}
+Sun, Y., Hou, Z., Huang, M., Tian, F., and Ruby~Leung, L.: Inverse modeling of
+  hydrologic parameters using surface flux and runoff observations in the
+  Community Land Model, Hydrology and Earth System Sciences, 17, 4995--5011,
+  2013.
+
+\bibitem[{Swiler et~al.()Swiler, Wildey, and Dalbey}]{swileruncertainty}
+Swiler, L.~P., Wildey, T.~M., and Dalbey, K.: Uncertainty Assessment in
+  Atmospheric Component of Climate Models.
+
+\bibitem[{Taylor(2001)}]{taylor2001summarizing}
+Taylor, K.~E.: Summarizing multiple aspects of model performance in a single
+  diagram, Journal of Geophysical Research: Atmospheres (1984--2012), 106,
+  7183--7192, 2001.
+
+\bibitem[{Wang et~al.(2004)Wang, Wan, Ji, Zhang, Yu, Yu, and
+  Liu}]{wang2004design}
+Wang, B., Wan, H., Ji, Z., Zhang, X., Yu, R., Yu, Y., and Liu, H.: Design of a
+  new dynamical core for global atmospheric models based on some efficient
+  numerical methods, Science in China Series A: Mathematics, 47, 4--21, 2004.
+
+\bibitem[{Warren and Schneider(1979)}]{warren1979seasonal}
+Warren, S.~G. and Schneider, S.~H.: Seasonal simulation as a test for
+  uncertainties in the parameterizations of a Budyko-Sellers zonal climate
+  model, Journal of the Atmospheric Sciences, 36, 1377--1391, 1979.
+
+\bibitem[{Williams(2005)}]{williams2005modelling}
+Williams, P.~D.: Modelling climate change: the role of unresolved processes,
+  Philosophical Transactions of the Royal Society A: Mathematical, Physical and
+  Engineering Sciences, 363, 2931--2946, 2005.
+
+\bibitem[{Xu and Krueger(1991)}]{xu1991evaluation}
+Xu, K.-M. and Krueger, S.~K.: Evaluation of cloudiness parameterizations using
+  a cumulus ensemble model, Monthly weather review, 119, 342--367, 1991.
+
+\bibitem[{Yang et~al.(2013)Yang, Qian, Lin, Leung, Rasch, Zhang, McFarlane,
+  Zhao, Zhang, Wang et~al.}]{yang2013uncertainty}
+Yang, B., Qian, Y., Lin, G., Leung, L.~R., Rasch, P.~J., Zhang, G.~J.,
+  McFarlane, S.~A., Zhao, C., Zhang, Y., Wang, H., et~al.: Uncertainty
+  quantification and parameter tuning in the CAM5 Zhang-McFarlane convection
+  scheme and impact of improved convection on the global circulation and
+  climate, Journal of Geophysical Research: Atmospheres, 118, 395--415, 2013.
+
+\bibitem[{Yang et~al.(2014)Yang, Zhang, Qian, Huang, and
+  Yan}]{yang2014calibration}
+Yang, B., Zhang, Y., Qian, Y., Huang, A., and Yan, H.: Calibration of a
+  convective parameterization scheme in the WRF model and its impact on the
+  simulation of East Asian summer monsoon precipitation, Climate Dynamics, pp.
+  1--24, 2014.
+
+\bibitem[{Zhang and Mu(2005)}]{zhang2005effects}
+Zhang, G.~J. and Mu, M.: Effects of modifications to the Zhang-McFarlane
+  convection parameterization on the simulation of the tropical precipitation
+  in the National Center for Atmospheric Research Community Climate Model,
+  version 3, Journal of Geophysical Research: Atmospheres (1984--2012), 110,
+  2005.
+
+\bibitem[{Zhang et~al.()Zhang, Xie, Xue, Li, Xu, and
+  Wang}]{zhang2014quantification}
+Zhang, T., Xie, F., Xue, W., Li, L., Xu, H., and Wang, B.: Quantification and
+  optimization of parameter uncertainty in the Grid-point Atmospheric Model
+  GAMIL2, Chinese Journal of Geophysics.
+
+\end{thebibliography}

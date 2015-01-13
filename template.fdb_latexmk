@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex template"] 1418646025 "template.aux" "template.bbl" "template" 1418647576
+["bibtex template"] 1421175683 "template.aux" "template.bbl" "template" 1421175685
   "./copernicus.bst" 1400544204 38958 80a59dbc701e066540b9b47c2a8882d6 ""
-  "template.aux" 1418647576 8654 d5d4ee9507e7996d66f7c88737b3b02e ""
+  "template.aux" 1421175685 8793 7a830eaf8479b540a7c3e048cb282f53 ""
   "template.bcf" 0 -1 0 ""
-  "uq.bib" 1418494414 12186 cb14efdf322885c1bcb09bd34d203759 ""
+  "uq.bib" 1420790736 12536 5d08563811c0453185aa67a434801cdd ""
   (generated)
-  "template.bbl"
   "template.blg"
-["pdflatex"] 1418647575 "template.tex" "template.pdf" "template" 1418647576
+  "template.bbl"
+["pdflatex"] 1421175684 "template.tex" "template.pdf" "template" 1421175685
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def" 1368743226 42950 b2c89311c96d7b70c24e1365a2fa51ee ""
@@ -90,13 +90,13 @@
   "radiation_curve.pdf" 1415959483 91829 033d67faf1d9b422962bb7c76124652c ""
   "reg.pdf" 1415885201 30748 312e2bec51333489e7276109aa65b0d4 ""
   "shum.pdf" 1415940990 97744 cadcb1540eb165000d53145b7f9e7fb9 ""
-  "template.aux" 1418647576 8654 d5d4ee9507e7996d66f7c88737b3b02e ""
-  "template.bbl" 1418646026 10530 ab5b5e68bf4ab69268e8a8f44c06ad34 "bibtex template"
-  "template.tex" 1418647574 37826 9a4b1bc15f2daa30037961f31c349da6 ""
+  "template.aux" 1421175685 8793 7a830eaf8479b540a7c3e048cb282f53 ""
+  "template.bbl" 1421175684 10819 32080969b88a8ec1733b5116b11e05c7 "bibtex template"
+  "template.tex" 1421175678 36898 17a66d60501515c9bc72897b3dc9d713 ""
   "workflow.pdf" 1415820567 95328 d90136ab31bf63da64e92f570b35e3fe ""
   (generated)
-  "template.pdf"
   "reg-eps-converted-to.pdf"
+  "template.pdf"
   "Morris-eps-converted-to.pdf"
   "template.log"
   "template.aux"

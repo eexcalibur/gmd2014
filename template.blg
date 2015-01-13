@@ -6,45 +6,45 @@ Database file #1: uq.bib
 Warning--empty journal in swileruncertainty
 Warning--empty year in swileruncertainty
 Warning--empty year in zhang2014quantification
-You've used 37 entries,
+You've used 38 entries,
             2811 wiz_defined-function locations,
-            1230 strings with 16275 characters,
-and the built_in function-call counts, 39181 in all, are:
-= -- 4612
-> -- 1398
+            1235 strings with 16494 characters,
+and the built_in function-call counts, 39780 in all, are:
+= -- 4650
+> -- 1446
 < -- 17
-+ -- 680
-- -- 435
-* -- 2290
-:= -- 3783
-add.period$ -- 37
-call.type$ -- 37
-change.case$ -- 216
-chr.to.int$ -- 37
-cite$ -- 114
-duplicate$ -- 4015
-empty$ -- 1918
-format.name$ -- 552
-if$ -- 7746
++ -- 696
+- -- 450
+* -- 2345
+:= -- 3870
+add.period$ -- 38
+call.type$ -- 38
+change.case$ -- 223
+chr.to.int$ -- 38
+cite$ -- 117
+duplicate$ -- 4058
+empty$ -- 1954
+format.name$ -- 570
+if$ -- 7861
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 395
-newline$ -- 120
-num.names$ -- 148
-pop$ -- 1706
+missing$ -- 406
+newline$ -- 123
+num.names$ -- 152
+pop$ -- 1732
 preamble$ -- 1
-purify$ -- 216
+purify$ -- 223
 quote$ -- 0
-skip$ -- 2448
+skip$ -- 2465
 stack$ -- 0
-substring$ -- 1785
-swap$ -- 3519
+substring$ -- 1788
+swap$ -- 3540
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 333
+type$ -- 342
 warning$ -- 3
-while$ -- 206
+while$ -- 209
 width$ -- 0
-write$ -- 410
+write$ -- 421
 (There were 3 warnings)

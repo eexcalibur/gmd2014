@@ -54,7 +54,7 @@
 
 \linenumbers
 
-\title{An effective and efficient calibration strategy of uncertain physical parameters in the Grid-point Atmospheric Model GAMIL2}
+\title{An automatic and effective parameter optimization method for model tuning}
 
 
 % % \Author[affil]{given_name}{surname}
@@ -97,28 +97,7 @@
 
 \begin{abstract}  
 
-Physical parameterizations remain, one of the most important sources of
-uncertainties for current climate system models. As model complexity and
-simulation scenarios increase, the traditional manual and empirical model tuning
-approaches have significantly hindered model development and physical
-understanding. Due to high dimension parameters space, strong non-linear
-relationship between parameters and simulation variables, as well as high
-computational cost resulting from the long spin-up time in climate system model,
-it is ineffective and inefficient to calibrate uncertain parameters with only
-optimization algorithms. In this article, we present a ``three-steps''
-calibration strategy. First, we use the Morris and Sobol to remove insensitivity
-parameters to reduce the dimension space. Second, a initial values preprocessing
-technique based on fall factor sampling is presented to determine the area where
-the optimal solution is likely to be found.  Third, the simplex downhill
-algorithm is used to perform the search with low computational cost. Taken into
-account the complex operation of the ``three-step'', we provide a framework to
-automatically conduct this strategy. When applied this ``three-step'' to GAMIL2,
-Grid-point Atmospheric Model of LASG (State key Laboratory of Numerical Modeling
-for Atmospheric Sciences and Geophysical Fluid Dynamics), IAP (Institute of
-Atmospheric Physical). A comprehensive metrics based on precipitation, wind,
-temperature, humidity, potential height, and radiation flux fields is used in
-this work. Results show that the proposed metrics is improved by 9\% compared to
-the standard GAMIL2 version using the ``three-step'' optimization strategy.
+Physical parameterizations in GCMs, having various uncertain parameters, greatly impact model performance and model climate sensitivity.  Traditional manual and empirical tuning of these parameters is time consuming and ineffective. In this study, a ``triple-step'' methodology is proposed to automatically and effectively obtain the best/optimum  combination of some key parameters in cloud and convective parameterizations based on a comprehensive objective evaluation metrics. It is found that the optimum combination of these parameters determined using this method is able to improve the model overall performance by 9\% in a GCM. The method can be easily applied to other GCMs to speed up model development process, especially regarding unavoidable comprehensive parameter tuning in model development.
 
 \end{abstract}
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -51,6 +51,12 @@ Carrassi, A. and Vannitsem, S.: State and parameter estimation with the
 \bibitem[{DelSole and Yang(2010)}]{delsole2010state}
 DelSole, T. and Yang, X.: State and parameter estimation in stochastic
   dynamical models, Physica D: Nonlinear Phenomena, 239, 1781--1788, 2010.
+
+\bibitem[{Gill et~al.(2006)Gill, Kaheil, Khalil, McKee, and
+  Bastidas}]{gill2006multiobjective}
+Gill, M.~K., Kaheil, Y.~H., Khalil, A., McKee, M., and Bastidas, L.:
+  Multiobjective particle swarm optimization for parameter estimation in
+  hydrology, Water Resources Research, 42, 2006.
 
 \bibitem[{Gleckler et~al.(2008)Gleckler, Taylor, and
   Doutriaux}]{gleckler2008performance}

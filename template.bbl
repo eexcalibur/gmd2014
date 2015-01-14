@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -30,6 +30,10 @@ Allen, M.~R., Stott, P.~A., Mitchell, J.~F., Schnur, R., and Delworth, T.~L.:
 Barkstrom, B.~R.: The earth radiation budget experiment (ERBE), Bulletin of the
   American Meteorological Society, 65, 1170--1185, 1984.
 
+\bibitem[{Beven and Binley(1992)}]{beven1992future}
+Beven, K. and Binley, A.: The future of distributed models: model calibration
+  and uncertainty prediction, Hydrological processes, 6, 279--298, 1992.
+
 \bibitem[{Cameron et~al.(1999)Cameron, Beven, Tawn, Blazkova, and
   Naden}]{cameron1999flood}
 Cameron, D., Beven, K.~J., Tawn, J., Blazkova, S., and Naden, P.: Flood
@@ -42,15 +46,14 @@ Campolongo, F., Cariboni, J., and Saltelli, A.: An effective screening design
   for sensitivity analysis of large models, Environmental modelling \&
   software, 22, 1509--1518, 2007.
 
-\bibitem[{Carrassi and Vannitsem(2011)}]{carrassi2011state}
-Carrassi, A. and Vannitsem, S.: State and parameter estimation with the
-  extended Kalman filter: an alternative formulation of the model error
-  dynamics, Quarterly Journal of the Royal Meteorological Society, 137,
-  435--451, 2011.
+\bibitem[{Eldred et~al.(2007)Eldred, Agarwal, Perez, Wojtkiewicz~Jr, and
+  Renaud}]{eldred2007investigation}
+Eldred, M., Agarwal, H., Perez, V., Wojtkiewicz~Jr, S., and Renaud, J.:
+  Investigation of reliability method formulations in DAKOTA/UQ, Structure and
+  Infrastructure Engineering, 3, 199--213, 2007.
 
-\bibitem[{DelSole and Yang(2010)}]{delsole2010state}
-DelSole, T. and Yang, X.: State and parameter estimation in stochastic
-  dynamical models, Physica D: Nonlinear Phenomena, 239, 1781--1788, 2010.
+\bibitem[{Gilks(2005)}]{gilks2005markov}
+Gilks, W.~R.: Markov chain monte carlo, Wiley Online Library, 2005.
 
 \bibitem[{Gill et~al.(2006)Gill, Kaheil, Khalil, McKee, and
   Bastidas}]{gill2006multiobjective}
@@ -63,6 +66,10 @@ Gill, M.~K., Kaheil, Y.~H., Khalil, A., McKee, M., and Bastidas, L.:
 Gleckler, P.~J., Taylor, K.~E., and Doutriaux, C.: Performance metrics for
   climate models, Journal of Geophysical Research: Atmospheres (1984--2012),
   113, 2008.
+
+\bibitem[{Goldberg et~al.(1989)Goldberg, Korb, and Deb}]{goldberg1989messy}
+Goldberg, D.~E., Korb, B., and Deb, K.: Messy genetic algorithms: Motivation,
+  analysis, and first results, Complex systems, 3, 493--530, 1989.
 
 \bibitem[{Hack et~al.(1994)Hack, Boville, Kiehl, Rasch, and
   Williamson}]{hack1994climate}
@@ -82,6 +89,13 @@ Hararuk, O., Xia, J., and Luo, Y.: Evaluation and improvement of a global land
   model against soil carbon data using a Bayesian Markov chain Monte Carlo
   method, Journal of Geophysical Research: Biogeosciences, 119, 403--417, 2014.
 
+\bibitem[{Hegerty et~al.(2009)Hegerty, Hung, and
+  Kasprak}]{hegerty2009comparative}
+Hegerty, B., Hung, C.-C., and Kasprak, K.: A comparative study on differential
+  evolution and genetic algorithms for some combinatorial problems, in:
+  Proceedings of 8th Mexican International Conference on Artificial
+  Intelligence, 2009.
+
 \bibitem[{Jackson et~al.(2004)Jackson, Sen, and Stoffa}]{jackson2004efficient}
 Jackson, C., Sen, M.~K., and Stoffa, P.~L.: An efficient stochastic Bayesian
   approach to optimal parameter and uncertainty estimation for climate model
@@ -99,6 +113,11 @@ Li, L., Wang, B., Dong, L., Liu, L., Shen, S., Hu, N., Sun, W., Wang, Y.,
   Huang, W., Shi, X., et~al.: Evaluation of grid-point atmospheric model of IAP
   LASG version 2 (GAMIL2), Advances in Atmospheric Sciences, 30, 855--867,
   2013.
+
+\bibitem[{Liang et~al.(2013)Liang, Cheng, and Lin}]{liang2013simulated}
+Liang, F., Cheng, Y., and Lin, G.: Simulated Stochastic Approximation Annealing
+  for Global Optimization with a Square-Root Cooling Schedule, Journal of the
+  American Statistical Association, 2013.
 
 \bibitem[{Morris(1991)}]{morris1991factorial}
 Morris, M.~D.: Factorial sampling plans for preliminary computational
@@ -129,29 +148,33 @@ Press, W., Teukolsky, S., Vetterling, W., and Flannery, B.: Numerical Recipes
 Reichler, T. and Kim, J.: How well do coupled models simulate today's climate?,
   Bulletin of the American Meteorological Society, 89, 303--311, 2008.
 
-\bibitem[{Rucong(1994)}]{rucong1994two}
-Rucong, Y.: A two—step shape—preserving advection scheme, Advances in
-  Atmospheric Sciences, 11, 479--490, 1994.
+\bibitem[{Santitissadeekorn and Jones(2013)}]{santiti2013simulated}
+Santitissadeekorn, N. and Jones, C.: Two-stage filtering for joint
+  state-parameter estimation, Journal of the American Statistical Association,
+  2013.
 
 \bibitem[{Severijns and Hazeleger(2005)}]{severijns2005optimizing}
 Severijns, C. and Hazeleger, W.: Optimizing parameters in an atmospheric
   general circulation model, Journal of climate, 18, 3527--3535, 2005.
+
+\bibitem[{Shi and Eberhart(1999)}]{shi1999empirical}
+Shi, Y. and Eberhart, R.~C.: Empirical study of particle swarm optimization,
+  in: Evolutionary Computation, 1999. CEC 99. Proceedings of the 1999 Congress
+  on, vol.~3, IEEE, 1999.
 
 \bibitem[{Simmons et~al.(2007)Simmons, Uppala, Dee, and
   Kobayashi}]{simmons2007era}
 Simmons, A., Uppala, S., Dee, D., and Kobayashi, S.: ERA-Interim: New ECMWF
   reanalysis products from 1989 onwards, ECMWF newsletter, 110, 25--35, 2007.
 
-\bibitem[{Snyder et~al.(2008)Snyder, Bengtsson, Bickel, and
-  Anderson}]{snyder2008obstacles}
-Snyder, C., Bengtsson, T., Bickel, P., and Anderson, J.: Obstacles to
-  high-dimensional particle filtering, Monthly Weather Review, 136, 4629--4640,
-  2008.
-
 \bibitem[{Sobol(2001)}]{sobol2001global}
 Sobol, I.~M.: Global sensitivity indices for nonlinear mathematical models and
   their Monte Carlo estimates, Mathematics and computers in simulation, 55,
   271--280, 2001.
+
+\bibitem[{Storn and Price(1995)}]{storn1995differential}
+Storn, R. and Price, K.: Differential evolution-a simple and efficient adaptive
+  scheme for global optimization over continuous spaces, ICSI Berkeley, 1995.
 
 \bibitem[{Sun et~al.(2013)Sun, Hou, Huang, Tian, and
   Ruby~Leung}]{sun2013inverse}
@@ -160,14 +183,14 @@ Sun, Y., Hou, Z., Huang, M., Tian, F., and Ruby~Leung, L.: Inverse modeling of
   Community Land Model, Hydrology and Earth System Sciences, 17, 4995--5011,
   2013.
 
-\bibitem[{Swiler et~al.()Swiler, Wildey, and Dalbey}]{swileruncertainty}
-Swiler, L.~P., Wildey, T.~M., and Dalbey, K.: Uncertainty Assessment in
-  Atmospheric Component of Climate Models.
-
 \bibitem[{Taylor(2001)}]{taylor2001summarizing}
 Taylor, K.~E.: Summarizing multiple aspects of model performance in a single
   diagram, Journal of Geophysical Research: Atmospheres (1984--2012), 106,
   7183--7192, 2001.
+
+\bibitem[{Tong(2005)}]{tong2005psuade}
+Tong, C.: PSUADE User's Manual, Lawrence Livermore National Laboratory (LLNL),
+  Livermore, CA, 109, 2005.
 
 \bibitem[{Wang et~al.(2004)Wang, Wan, Ji, Zhang, Yu, Yu, and
   Liu}]{wang2004design}
@@ -204,17 +227,15 @@ Yang, B., Zhang, Y., Qian, Y., Huang, A., and Yan, H.: Calibration of a
   simulation of East Asian summer monsoon precipitation, Climate Dynamics, pp.
   1--24, 2014.
 
+\bibitem[{Yu(1994)}]{rucong1994two}
+Yu, R.: A two—step shape—preserving advection scheme, Advances in
+  Atmospheric Sciences, 11, 479--490, 1994.
+
 \bibitem[{Zhang and Mu(2005)}]{zhang2005effects}
 Zhang, G.~J. and Mu, M.: Effects of modifications to the Zhang-McFarlane
   convection parameterization on the simulation of the tropical precipitation
   in the National Center for Atmospheric Research Community Climate Model,
   version 3, Journal of Geophysical Research: Atmospheres (1984--2012), 110,
   2005.
-
-\bibitem[{Zhang et~al.()Zhang, Xie, Xue, Li, Xu, and
-  Wang}]{zhang2014quantification}
-Zhang, T., Xie, F., Xue, W., Li, L., Xu, H., and Wang, B.: Quantification and
-  optimization of parameter uncertainty in the Grid-point Atmospheric Model
-  GAMIL2, Chinese Journal of Geophysics.
 
 \end{thebibliography}

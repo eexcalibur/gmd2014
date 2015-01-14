@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.30)  14 JAN 2015 03:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.30)  15 JAN 2015 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,100 +903,118 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 99.
- [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4] [5]
-[6] [7] (./template.bbl [8] [9] [10]) [11]
-<Morris.pdf, id=207, 449.68pt x 338.26375pt>
+Overfull \hbox (1.35777pt too wide) in paragraph at lines 110--111
+[]\T1/ptm/m/n/10 Traditionally, the un-cer-tain pa-ram-e-ters are man-u-ally tu
+ned by com-pre-hen-sive com-par-i-son of model
+ []
+
+[1
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] [5] [6]
+Overfull \hbox (4.35826pt too wide) in paragraph at lines 191--201
+\T1/ptm/m/n/10 Wind, hu-mid-ity, and geopo-ten-tial height de-rive from the Eu-
+ro-pean Cen-ter for Medium-Range Weather
+ []
+
+[7] [8] [9] (./template.bbl [10] [11] [12]) [13]
+<Morris.pdf, id=248, 449.68pt x 338.26375pt>
 File: Morris.pdf Graphic file (type pdf)
  <use Morris.pdf>
-Package pdftex.def Info: Morris.pdf used on input line 452.
+Package pdftex.def Info: Morris.pdf used on input line 322.
 (pdftex.def)             Requested size: 236.15796pt x 177.64789pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 453.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 323.
 
-<Sobol.pdf, id=208, 505.89pt x 505.89pt>
+<Sobol.pdf, id=249, 505.89pt x 505.89pt>
 File: Sobol.pdf Graphic file (type pdf)
  <use Sobol.pdf>
-Package pdftex.def Info: Sobol.pdf used on input line 457.
+Package pdftex.def Info: Sobol.pdf used on input line 327.
 (pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
 
-<workflow.pdf, id=209, 584.1825pt x 404.51125pt>
+<workflow.pdf, id=250, 584.1825pt x 404.51125pt>
 File: workflow.pdf Graphic file (type pdf)
  <use workflow.pdf>
-Package pdftex.def Info: workflow.pdf used on input line 462.
+Package pdftex.def Info: workflow.pdf used on input line 332.
 (pdftex.def)             Requested size: 435.32724pt x 301.44456pt.
 
-Overfull \hbox (36.98866pt too wide) in paragraph at lines 462--463
+Overfull \hbox (36.98866pt too wide) in paragraph at lines 332--333
  [][] 
  []
 
-<reg.pdf, id=210, 845.1575pt x 598.235pt>
+<taylor.pdf, id=251, 597.23125pt x 845.1575pt>
+File: taylor.pdf Graphic file (type pdf)
+ <use taylor.pdf>
+Package pdftex.def Info: taylor.pdf used on input line 337.
+(pdftex.def)             Requested size: 341.43306pt x 483.17624pt.
+
+<reg.pdf, id=252, 845.1575pt x 598.235pt>
 File: reg.pdf Graphic file (type pdf)
  <use reg.pdf>
-Package pdftex.def Info: reg.pdf used on input line 467.
+Package pdftex.def Info: reg.pdf used on input line 342.
 (pdftex.def)             Requested size: 435.32724pt x 308.14467pt.
 
-Overfull \hbox (36.98866pt too wide) in paragraph at lines 467--468
+Overfull \hbox (36.98866pt too wide) in paragraph at lines 342--343
  [][] 
  []
 
-<shum.pdf, id=211, 614.295pt x 794.97pt>
+<shum.pdf, id=253, 614.295pt x 794.97pt>
 File: shum.pdf Graphic file (type pdf)
  <use shum.pdf>
-Package pdftex.def Info: shum.pdf used on input line 472.
+Package pdftex.def Info: shum.pdf used on input line 347.
 (pdftex.def)             Requested size: 435.32724pt x 563.36519pt.
 
-Overfull \hbox (36.98866pt too wide) in paragraph at lines 472--473
+Overfull \hbox (36.98866pt too wide) in paragraph at lines 347--348
  [][] 
  []
 
-<cloud.pdf, id=212, 614.295pt x 794.97pt>
+<cloud.pdf, id=254, 614.295pt x 794.97pt>
 File: cloud.pdf Graphic file (type pdf)
  <use cloud.pdf>
-Package pdftex.def Info: cloud.pdf used on input line 477.
+Package pdftex.def Info: cloud.pdf used on input line 352.
 (pdftex.def)             Requested size: 435.32724pt x 563.36519pt.
 
-Overfull \hbox (36.98866pt too wide) in paragraph at lines 477--478
+Overfull \hbox (36.98866pt too wide) in paragraph at lines 352--353
  [][] 
  []
 
-<radiation_curve.pdf, id=213, 597.23125pt x 845.1575pt>
+<radiation_curve.pdf, id=255, 597.23125pt x 845.1575pt>
 File: radiation_curve.pdf Graphic file (type pdf)
 
 <use radiation_curve.pdf>
-Package pdftex.def Info: radiation_curve.pdf used on input line 482.
+Package pdftex.def Info: radiation_curve.pdf used on input line 357.
 (pdftex.def)             Requested size: 341.43306pt x 483.17624pt.
- [12 <./Morris.pdf> <./Sobol.pdf>] [13 <./workflow.pdf>] [14 <./reg.pdf>] [15 <
-./shum.pdf>] [16 <./cloud.pdf>] [17 <./radiation_curve.pdf>]
-Overfull \hbox (41.38107pt too wide) in paragraph at lines 544--563
+ [14 <./Morris.pdf> <./Sobol.pdf>] [15 <./workflow.pdf>] [16 <./taylor.pdf>] [1
+7 <./reg.pdf>] [18 <./shum.pdf>] [19 <./cloud.pdf>]
+[20 <./radiation_curve.pdf>]
+Overfull \hbox (41.38107pt too wide) in paragraph at lines 419--438
  []$[]$ 
  []
 
-[18] [19]
+[21] [22]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 654.
- [20
+put line 529.
+ [23
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 709.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 709.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 584.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 709.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 709.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 709.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 584.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 584.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 584.
  ) 
 Here is how much of TeX's memory you used:
- 9144 strings out of 493315
- 126241 string characters out of 6137904
- 243028 words of memory out of 5000000
- 12293 multiletter control sequences out of 15000+600000
+ 9161 strings out of 493315
+ 126519 string characters out of 6137904
+ 243215 words of memory out of 5000000
+ 12302 multiletter control sequences out of 15000+600000
  42383 words of font info for 70 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,10n,34p,832b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,34p,2120b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1013,10 +1031,10 @@ st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on template.pdf (20 pages, 856283 bytes).
+Output written on template.pdf (23 pages, 1187399 bytes).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 591 compressed objects within 6 object streams
- 103 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 903 PDF objects out of 1000 (max. 8388607)
+ 644 compressed objects within 7 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

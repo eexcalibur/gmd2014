@@ -97,82 +97,79 @@
 
 \begin{abstract}  
 
-Physical parameterizations in GCMs, having various uncertain parameters, greatly impact model performance and model climate sensitivity.  Traditional manual and empirical tuning of these parameters is time consuming and ineffective. In this study, a ``triple-step'' methodology is proposed to automatically and effectively obtain the best/optimum  combination of some key parameters in cloud and convective parameterizations based on a comprehensive objective evaluation metrics. It is found that the optimum combination of these parameters determined using this method is able to improve the model overall performance by 9\% in a GCM. The method can be easily applied to other GCMs to speed up model development process, especially regarding unavoidable comprehensive parameter tuning in model development.
+Physical parameterizations in General Circulation Model (GCM), having various uncertain parameters, greatly impact model performance and model climate sensitivity.  Traditional manual and empirical tuning of these parameters is time consuming and ineffective. In this study, a ``three-steps'' methodology is proposed to automatically and effectively obtain the optimum  combination of some key parameters in cloud and convective parameterizations based on a comprehensive objective evaluation metrics. It is found that the optimum combination of these parameters determined using this method is able to improve the model overall performance by 9\% in a GCM. The method can be easily applied to other GCMs to speed up model development process, especially regarding unavoidable comprehensive parameters tuning in model development.
 
 \end{abstract}
 
 
 \introduction  %% \introduction[modified heading if necessary] 
 
-Sub-grid scale physical processes are presented as empirical or statistic
-parameters in climate system models \citep{hack1994climate}.  The
-parameterization physical processes approximate the unresolvable scale dynamic
-and thermodynamics \citep{williams2005modelling},
-consequently, introducing to simulations uncertainties for investigating the
-climate change using climate system models \citep{warren1979seasonal}. The
-uncertain parameters are required to calibrate when new or improved
-parameterized schemes are integrated into models \citep{li2013evaluation}. 
-
-Traditionally, the uncertain parameters are manually tuned by analysis the relationship between
-simulations and observations. This calibration is somewhat subjective and hard to manipulate due to
-the tedious labor intensive work \citep{hakkarainen2012closure,allen2000quantifying}. Currently,
-the automatic calibration technique is a hot topic in the climate system model uncertainty
-quantification. The previous work focuses on the method of posterior range and probability,
-optimization algorithms, and data assimilation technique. The first class method, the optimization
-parameters confidence range is evaluated based on likelihood and bayesian estimation.
-\cite{cameron1999flood} improves the forecast by the generalized likelihood uncertainty estimation
-(GLUE), a method of obtaining parameters uncertain range of a specified confidence level. The
-Bayesian Markov chain Monte Carlo (MCMC) is widely used to obtain posterior probability
-distribution from prior knowledge. \cite{hararuk2014evaluation} calibrates soil C data in CLM-CASA
-model, a global land model consisting of biogeophysics and biogeochemistry processes using MCMC
-approach. \cite{sun2013inverse} demonstrates the possibility of calibration of hydrologic 
-parameters with  MCMC in CLM4. \cite{jackson2008error} obtains 6 parameters posterior probability 
-from clouds and convection physical process in CAM3.1 by Multiple Very Fast  Simulated Annealing 
-(MVFSA) to optimize a comprehensive metrics, including  cloud, radiation, temperature,  and
-precipitation, wind, as  well as humidity variables.The second class method, the optimization
-algorithms search the maximum or minimum metrics value in the given parameters
-space.\cite{severijns2005optimizing} calibrates parameters of radiation,  clouds, and convection in
-Speedy with down-hill simplex, to improve the radiation budget at the top of the atmosphere and at
-the surface, and the  large scale circulation. Down-hill simplex is a fast convergence algorithm
-when the parameters space is not high. The changed geometry represents the optimal direction in 
-the method, instead of the gradient information, such as Newton and quasi-Newton.  Compared with 
-down-hill simplex, the evolution algorithm,
-such as MVFSA, \citep{jackson2004efficient,yang2014calibration}, simulated stochastic approximation
-annealing (SSRR) \citep{yang2013uncertainty}, multi-objective genetic algorithm (MOGA)
-\citep{swileruncertainty} are the global optimization algorithms, also used to automatically tune
-the uncertain parameters. 
-\cite{gill2006multiobjective}
-Another class method, data assimilation method become another research
-direction of parameters calibration, such as Ensemble Kalman filter (ENKF)
-\citep{aksoy2006ensemble,delsole2010state}, Extended Kalman filter (EKF) \citep{carrassi2011state},
-as well as Particle filtering (PF) \citep{snyder2008obstacles}.
-
-However, posterior parameter distribution methods based MCMC and the global optimization
-evolutionary algorithms require at least ten thousand steps to obtain the stability solution. The
-latter and filter method, such as ENKF and PF, require multi-individuals in each iterations,
-leading to high computation cost. Taken into account high dimension uncertain parameters space,
-strong nonlinear relationship between parameters and simulations, the optimization algorithms can
-not search the optimal parameters inefficiently. The above work mostly use the single step to
-calibrate uncertain parameters. \cite{zhang2014quantification} presents a ``two-steps'' strategy,
-conducting a step of pre-processing initial values of optimization algorithms before tuning with
-down-hill simplex. Nevertheless, the tuned uncertain parameters are also selected by experts,
-suffering to subjective experience, hardly quantifying the parameters sensitivity.
-
-In this paper, we propose a ``three-steps'' strategy based on the ``two-steps''. In the first step,
-a global sensitivity analysis method, Morris \citep{morris1991factorial,campolongo2007effective},
-eliminates the insensitivity parameters by analyzing  the main and interaction effects among
-parameters. Another global method, Sobol \citep{sobol2001global}, is used to verify the Morris
-results. Taken into account the complex configuration and manipulation of the ``three-steps'',
-invoking parameters sampling, namelist reset, models running simultaneously, optimization
-iteration, sensitivity analysis, as well as metrics diagnostics, a automatic workflow is provided
-to make the calibration process more efficient. The ``three-step'' calibration strategy is applied
-to GAMIL2,  a Grid-point Atmospheric Model developed by State Key Laboratory of Numerical Modeling
-for Atmospheric Sciences and Geophysical Fluid Dynamics, Institute of Atmospheric Physics, China,
-to improve the comprehensive simulation performance of the climate mean state.
+Due to current model resolution, GCMs need to parameterize various sub-grid scale processes. However, due to the complexities involved in these processes, there are various empirical determined parameters, especially within cloud and convective parameterizations. Sub-grid scale physical processes are presented as empirical or statistic parameters in climate system models \citep{hack1994climate}. Physical parameterizations aims to approximate the overall statistical outcomes of various sub-grid scale physics \citep{williams2005modelling}. Consequently, these parameterizations introduce uncertainties  to climate simulations using climate system models \citep{warren1979seasonal}. In general, these new uncertain parameters are required to be calibrated or constrained when new parameterization schemes are integrated into models \citep{li2013evaluation}.
 
 
-\section{Model and observations} 
-\subsection{GAMIL2 atmospheric model} 
+Traditionally, the uncertain parameters are manually tuned by comprehensive comparison of model simulations with available observations. Such an approach is subjective, labor intensive, and hard to be extended \citep{hakkarainen2012closure, allen2000quantifying}. Currently, the automatic parameter calibration technique is a hot topic in uncertainty quantification of climate system model. The previous work focuses on the method of posterior range and probability, optimization algorithms, and data assimilation technique. The first class method, the optimization parameters confidence range is evaluated based on likelihood and Bayesian estimation. \cite{cameron1999flood} improves the forecast by the generalized likelihood uncertainty estimation (GLUE) \citep{beven1992future}, a method of obtaining parameters uncertain range of a specified confidence level. The Bayesian Markov chain Monte Carlo (MCMC) \citep{gilks2005markov} is widely used to obtain posterior probability distribution from prior knowledge. \cite{sun2013inverse} demonstrates the possibility of calibration of hydrologic in the CLM4  parameters with an Metropolis-Hasting algorithm, based on the MCMC approach. \cite{hararuk2014evaluation} calibrates soil C data in CLM-CASA model, a global land model consisting of biogeophysics and biogeochemistry processes using an adaptive Metropolis (AM) algorithm \citep{gilks2005markov}. \cite{jackson2008error} obtains parameters posterior probability  from clouds and convection physical process in CAM3.1 by Multiple Very Fast Simulated Annealing (MVFSA) to optimize a comprehensive metrics, including  cloud, radiation, temperature, precipitation, wind, as  well as humidity variables. This method is one to two orders of magnitude faster than the Metropolis-Hasting algorithm \citep{jackson2004efficient}. However, these methods only determine the likely area, can not directly specify a combination of uncertain parameters with a minimum metrics value. Meanwhile, the posterior distribution heavily depends on  the assuming the likelihood function.
+
+The second class method, the optimization algorithms search the maximum or minimum metrics value in the given parameters space. \cite{severijns2005optimizing} calibrates parameters of radiation,  clouds, and convection in Speedy with downhill simplex \citep{press1992numerical,nelder1965simplex}, to improve the radiation budget at the top of the atmosphere and at the surface, and the  large scale circulation. Downhill simplex is a fast convergence algorithm when the parameters space is not high. But it is a local optimal algorithm, and difficult to search the global optimal solution.\cite{yang2013uncertainty} uses the  simulated stochastic approximation annealing (SSRR) \citep{liang2013simulated}  to tune the parameters of Zhang-McFarlane convection scheme to improve convection on the global circulation and climate. \cite{yang2014calibration}  uses the MVFSA algorithm to calibrate a convective parameterization scheme in the WRF model. However, the SSRR requires at least ten thousands steps to get a stable solution \citep{liang2013simulated}, and the MVFSA also requires thousands steps \citep{jackson2004efficient}. 	\cite{gill2006multiobjective} calibrates the SACSMA and SVM by multi-objective particle swarm optimization (MOPSO) . This algorithm requires dozens of individual cases in the each iteration, leading to high computational cost, compared with the downhill simplex, SSRR, and MVFSA, which need only one case. 
+
+Another class method, data assimilation method becomes another research direction of parameters calibration. \cite{aksoy2006ensemble} estimates the parameter uncertainty of MM5 by the Ensemble Kalman Filter (ENKF). \cite{santiti2013simulated} presents a two-stage filtering for the joint state-parameter estimation with a combination method of the particle filtering (PF) and ENKF.  The same as the MOPSO method, ENKF and PF require  dozens of individual cases in each iteration. 
+%the fifth-generation nonhydrostatic mesoscale model
+
+The Atmospheric General Circulation Models (AGCM) is a strong nonlinear relationship system. Likewise, taken into account high dimensions of uncertain parameters space, the mentioned methods require long iterations for convergence. More seriously, the AGCMs require at least five years simulations to get the significant results(spin up?), spending around several hours. Therefore, the above work  is  time consuming and ineffective to calibrate the uncertain parameters. 
+
+
+We propose a ``three-steps'' strategy. In the first step, a global sensitivity analysis method, Morris \citep{morris1991factorial,campolongo2007effective}, eliminates the insensitivity parameters by analyzing  the main and interaction effects among parameters. Another global method, Sobol \citep{sobol2001global}, is used to justify the Morris method. The downhill simplex algorithm is used to tune, because of its computational effect for dimension reduced parameters. Due to the initial values sensitivity to performance, a step of pre-processing initial values of the downhill simplex is conducted. Taken into account the complex configuration and manipulation of the ``three-steps'', invoking parameters sampling, namelist reset, models running simultaneously, optimization iteration, sensitivity analysis, as well as metrics diagnostics, a automatic workflow is provided to make the calibration process more efficient. The ``three-step'' calibration strategy is applied to GAMIL2, a Grid-point Atmospheric Model developed by State Key Laboratory of Numerical Modeling for Atmospheric Sciences and Geophysical Fluid Dynamics, Institute of Atmospheric Physics, China, to improve the comprehensive simulation performance of the climate mean state.
+
+Section 2 describes the details of the method and the structure of the automatic workflow. The application of the method in a GCM is presented in section 3 with a summary and discussion in section 4.
+
+\section{Method}
+The ``three-steps'' provides an effective and efficient calibration strategy. It aims at reducing the dimension of tuning space by eliminating the insensitivity parameters, and reducing the iteration steps by pre-processing initial values of optimal algorithms. An inexpensively computational algorithm, downhill simplex, is used to search the optimal solution.
+
+\subsection{Sensitive parameter determination}
+The number of uncertain parameters in physical parameterizations of the climate system model is large. Most optimization algorithms, such as particle swarm optimization (PSO), downhill simplex, and simulated annealing mentioned above are ineffective in the high dimension space. The higher dimension space, the more iterations are needed.  Additionally, some components of climate system model, such as atmosphere and ocean, require a long time to get the significant simulations (spin up?). Therefore, it suffers to an extremely calibration computational cost.  It is necessary to reduce the parameters dimension. 
+
+The Morris method \citep{morris1991factorial,campolongo2007effective}, is a qualitative global sensitivity method. The advantage of this method is that not only the single parameter sensitivity can be presented, but also the interactive sensitivity among parameters can be described. 
+
+The sampling strategy is based on Morris’s one-step-at-a-time (MOAT) experiment design using relatively few samples. It only needs  $(n+1) \times M$ points, where n is the number of calibration parameters and M is number of trajectories, usually 10-20. Consider the n parameters $x_i (i=1,...,n)$, normalized to [0,1]. The influence of each variables is defined as a elementary effect, show as equation (1), where $\Delta$ is the value of $1/p-1, ..., p-2/p-1$, and p is the sampling level. The starting point of a trajectory is selected randomly and completed it by adjusting one unchanged parameter value at a time in a random order, consisting $n+1$ samplings. The mean of $|d_j|$ stands for the main effect of a single parameter, and the standard deviation presents the interactive effect of multiple parameters. Therefore, those with low mean and low standard deviation will be eliminated. In this paper, parameters in table 2 are required to analysis sensitivity. We sample 80 points, and the results are showed in Figure 1. The insensitivity parameters, ke, capelmt and c0 of shallow convection, are removed.
+
+\begin{align}
+& d_{ij} = \frac{y(X_1,...,X_j+\Delta,...,X_N)-y(X_1,...,X_j,...,X_N)}{\Delta} \\
+& \mu_j = avg(|d_{i,j}|), \sigma_j = stddev(d_{i,j}) 
+\end{align}
+
+To justify the Morris method, we compare the results a benchmark method, Sobol \citep{sobol2001global}. It is a quantitative method based on variance decomposition requiring more samples than the Morris, with a higher computation cost. The variance of model output can be decomposed as equation (3), where n is the number of parameters, and $V_i$ is the variance of the $i_{th}$ parameter, and $V_{ij}$ is variance of iterative effect between the $i_{th}$ and $j_{th}$ parameters, and so on. The total sensitivity effect can be presented as equation (4), where $V_{-i}$ is the total variance except for the $x_i$ parameter. The Sobol results are showed as figure 2.  The screened out parameters are the same as the Morris.
+
+\begin{align}
+& V = \sum_{i=1}^n V_i + \sum_{1 \leq i < j \leq n} V_{ij} + ... + V_{1,2,...,n}  \\
+& S_{T_i} = 1 - \frac{V_{-i}}{V} 
+\end{align}
+$V_{-i}$ is the total variance except for $X_i$
+
+\subsection{A novel downhill simplex optimization method with the most appropriate initial value}
+
+Parameter tuning in climate system model is a global scale optimization problem in theory.  But the common evolutionary algorithms, such as genetic algorithm \citep{goldberg1989messy}, differential evolutionary (DE) \citep{storn1995differential} , and PSO, generally requires at least  thousands of iterations to get a stable global solution and a population of individuals in each iterations, causing large computation cost \citep{hegerty2009comparative,shi1999empirical}. It is infeasible to get the best optimization simulation by calibrating parameters. Therefore, to acquire a more optimal result in limited iterations is more practical.
+
+In this paper, we use and improve the downhill simplex to tune the uncertain parameters .The downhill simplex searches the optimal solution by changing the shape of a simplex, which represents the optimal direction and step length. A simplex is a geometry, consisting of $N+1$ vertexes and their interconnecting edges, where N is the number of calibration parameters screened by the 2.1 section. The vertexes stand for the pair of a set of parameters and its metrics. The new vertex is determined by expanding and shrinking the vertex with the highest metrics value, restructuring the new simplex. The details of the downhill simplex are described in \cite{press1992numerical} and \cite{nelder1965simplex}
+
+
+The convergence performance of the downhill simplex is sensitivity with its initial values. The parameter combinations with the smaller metrics will be selected.  Because if the initial simplex has a large span, it can jump out the local searching area by reflecting geometry and retractable transformation. In this case, the downhill simplex has a good global optimization capability at a low starting point. Otherwise, it oozes down the valley area and traps into the local optimal space. Therefore, the selected initial values can fast search the local optimal simulations.  The initial values are determined by the full factor sampling method within the full range of the sensitivity parameters.  The full factor method is an equilibrium distance sampling strategy, and is suitable to analysis the parameters values sensitivity in a low dimension space. We use it to sample in the given range as shown table 1, and refine sampled in a sensitivity range.
+
+
+Besides, the inappropriate initial values may lead to the ill-conditioned simplex geometry. It means that some parameters keep the same value in the initial values. These parameters cannot change in the optimal algorithm. Consequently, as much as different sampled parameters values are required to select to improve the parameters freedom of initial values. This procedure is presented as the initial values pre-processing of downhill simplex algorithm.
+
+
+\subsection{Implementation of the end-to-end automatic calibration workflow}
+
+Though the ``three-steps'' strategy is an effective calibration discussed in section 4.1, it invokes in many messy manipulations, including parameters sampling, parameter values configuration of models, multi models running simultaneously, metrics diagnostic, parameters sensitivity analysis, selecting the initial values of tuning algorithms, and the optimal results analysis. These operations no doubt lead to the inefficient calibration manipulation without an automatic workflow.
+
+The common uncertainty quantification toolboxes, such as Problem Solving environment for Uncertainty Analysis and Design Exploration (PSUADE) \citep{tong2005psuade}, Design Analysis Kit for Optimization and Terascale Applications (DAKOTA) \citep{eldred2007investigation}, support various uncertainty analysis methods, like parameter sampling, sensitivity analysis, numerical optimization, and response surface analysis.  These tools provide the function interfaces and an automatic workflow including parameter sampling, application running, and results collecting and analyzing. However, they cannot support multiple cases running simultaneously, the duplicate samples reducing, flexible optimization algorithm, and the climate mechanism analysis. Therefore, these tools are inefficient and inflexible to calibrate the uncertain parameters in climate system model.   
+
+Based on the manipulation of parameters calibration in climate system model and the operations of the ``three-steps'', we design and implement the end-to-end automatic workflow. Users only require to specify the calibration parameters of interest and their initial value range. The workflow can automatically execute the ``three-steps'' calibration strategy, and produce the optimal parameters and its corresponding diagnostic results. Besides, this workflow is opening system that the above common tools, PSUADE, DAKOTA, and others toolboxes, can be integrated.
+
+The structure of the automatic workflow is presented as in figure 1. It consists of four components, dimension reduction, calibration algorithms, post-processing, and tasks schedule. The dimension reduction module provides Morris and Sobol sensitivity analysis methods, and various sampling method, such as full factor, Latin Hypercube (LH), Morris one-at-a-time (MOAT) , and Central Composite Designs (CCD). Meanwhile, this module supports eliminate duplicate sampling points, reducing the unnecessary computing loads. As well, MCMC method based on adaptive Metropolis-Hastings algorithms is also provided to get the posterior distribution of uncertain parameters. The calibration algorithm module offers the local and global optimization algorithms. To take full use of computation resource, the scheduler module schedule as many as application cases running simultaneously. The post-processing module is response for metrics diagnostic, reanalysis and observation data management. Additional, all the intermediate metrics and their corresponding parameters are stored in DATABASE, used for posterior knowledge analysis.
+
+
+\section{Application in GAMIL2 model} 
+\subsection{Model description} 
 In this paper, the Grid-point Atmospheric Model of IAP LASG version 2 (GAMIL2) is used. It takes
 part in the Atmospheric Model Inter-comparison Project (AMIP) of IPCC AR5, Cloud Feedback Model
 Inter-comparison Project (CFMIP) and  Coupled Model Intercomparison Project Phase 5 (CMIP5) as an
@@ -180,18 +177,19 @@ atmospheric component of Flexible Global-Ocean-Atmosphere-Land System Model grid
 (FGOALS-g2). The horizontal resolution is 2.8 x 2.8, with 26 vertical levels. The dynamical core of
 GAMIL2 is a finite difference scheme, and conserves mass and effective energy
 \citep{wang2004design}. The moisture equation adopts the two- step shape-preserving advection
-scheme \citep{rucong1994two}. Compared with GAMIL1, the previous version, GAMIL2 upgrade cloud-
+scheme \citep{rucong1994two}. Compared with GAMIL1, the previous version, GAMIL2 has modifications on cloud-
 related process \citep{li2013evaluation}, such as the deep convection parameterization
 \citep{zhang2005effects}, the convective cloud fraction \citep{xu1991evaluation}, and the cloud
-microphysical \citep{morrison2008new}. The initial calibrated parameters are selected  from deep
+microphysics \citep{morrison2008new}. The initial calibrated parameters are selected  from deep
 convection, shallow convection, cloud fraction, cloud microphysical processes and boundary layer
-scheme, as table 1 shown. The default parameters values are the configuration of the standard
+scheme, as table 1 shown. The default parameter values are the configuration of the standard
 version, which takes part in IPCC AR5 and is called CNTL.
 
 
-\subsection{Observational data}
-Observed wind, humidity, and geopotential height derive from the European Center for Medium-Range
-Weather Forecasts (ECMWF) Re-Analysis (EEA) - Interim reanalysis, 1989 to 2004 and 1.5x1.5
+\subsection{Evaluation data and metrics}
+
+Wind, humidity, and geopotential height derive from the European Center for Medium-Range
+Weather Forecasts (ECMWF) Re-Analysis (ERA) - Interim reanalysis, 1989 to 2004 and 1.5x1.5
 horizontal resolution \citep{simmons2007era}. The precipitation comes from the Global Precipitation
 Climatology Project (GPCP), 1989 to 2004 and 2.5x2.5 horizontal resolution \citep{adler2003version}
 . The radiation variables use the Earth Radiation Budget Experiment (ERBE), 1985 to 1989  and
@@ -201,20 +199,17 @@ observational data are require to  remap to the grid of GAMIL2. However, the dur
 with the optimal parameters to insure the tuning parameters validity. The results show the
 consistent with the short simulation.
 
-
-\section{Methods}
-\subsection{Metrics}
 A comprehensive metrics, including wind, temperature, humidity, geopotential height, precipitation
 and radiation flux is used to quantitatively evaluate the simulation performance, to improve
 overall simulation skills \citep{murphy2004quantification,gleckler2008performance,reichler2008well}
 . These variables are shown as table 2. The model starts up in the 2000th year, and simulates 5
 years. Climate mean state of the last three years is used to diagnostic metrics. The
 calibration RMSE is defined as the spatial standard deviation (SD) of model simulation against
-observations, as equation (1) \citep{taylor2001summarizing,yang2013uncertainty}. In the propose  of
+observations, as equation (5) \citep{taylor2001summarizing,yang2013uncertainty}. In the propose  of
 integrating the 16 variables into a unique metrics, the SD of default GAMIL2  simulations against
-observations is used to scale each variable calibration RMSE, as equation (2). Finally, the 
-metrics is computed as the average value of each scaling variable factor, as equation (3). 
-Therefore, if the metrics is lower than one, the uncertain parameters have been improved.
+observations is used to scale each variable calibration RMSE, as equation (6). Finally, the 
+metrics is computed as the average value of each scaling variable factor, as equation (7). 
+Therefore, if the metrics is lower than one, the model performance have been improved.
 
 \begin{align}
 (\sigma_m^F)^2 &= \sum_{i=1}^l w(i)(x_m^F(i) - x_o^F(i))^2 \\
@@ -227,149 +222,24 @@ corresponding observation or reanalysis data. $x_r^F(i)$ is the reference result
 the weight due to the different grid area. I is the total grid number in model. $N^F$ is the 
 number of the chosen variables.
 
-\subsection{``Three-steps'' calibration strategy}
-With contrast to the manual and optimal algorithms calibration, the ``three-steps'' provides an
-effective and efficient automatic calibration strategy,  and aims at
-reducing the dimension of tuning space by eliminating the insensitivity parameters, and reducing
-the iteration steps by pre-processing initial values of optimal algorithms. Finally, an
-inexpensively computational algorithm, down-hill simplex, is used to search the optimal solution.
-
-\subsubsection{Reducing Dimension}
-Due to the high complex of physical parameterization process, there are a large number of uncertain
-parameters in climate system model. Moreover, the prior parameters values are usually set with a
-relatively large range. Most of optimization algorithms, such as genetic algorithm, down-hill
-simplex, and simulated annealing are ineffective in the high dimension space. Additionally, the
-atmospheric models require a long time to spin up, leading to the extremely long calibration
-computational cost.
-
-Instead of the correlation coefficient, only presenting the linear relationship, Morris, is a
-qualitative global sensitivity  method based on one-step-at-a-time (OAT) experiment design using
-relatively few samples. Not only the single parameter sensitivity can present, but also the
-interaction sensitivity among parameters can describe. It introduces MOAT sampling technology,
-requiring only $(n+1) \times M$ points, where n is the number of calibration parameters and M is
-number of trajectories, usually 10-20. Consider the n parameters $x_i (i=1,...,n)$, normalized to
-[0,1]. The influence of each variables is defined as a elementary effect, show as equation (4),
-where $\Delta$ is the value of $1/p-1, ..., p-2/p-1$, and p is the sampling level. The starting
-point of a trajectory is selected randomly and completed it by adjusting one unchanged parameter
-value at a time in random order, consisting $n+1$ samplings. The mean of $|d_j|$ can stand for the
-main effect of a single parameter, and the standard deviation presents the interactive effect of
-multi parameters. Therefore, those with low mean and low standard deviation will be eliminated. In
-this paper, parameters in table 2 are required to analyze sensitivity. We sample 80 points, and the
-results are showed in Figure 1. The insensitivity parameters, ke, capelmt and c0 of shallow
-convection, are removed.
-
-\begin{align}
-& d_{ij} = \frac{y(X_1,...,X_j+\Delta,...,X_N)-y(X_1,...,X_j,...,X_N)}{\Delta} \\
-& \mu_j = avg(|d_{i,j}|), \sigma_j = stddev(d_{i,j}) 
-\end{align}
-
-In order to verify the Morris results, we adopt another sensitivity method, Sobol. It is a
-quantitative method based on variance decomposition and requires more samples than the Morris, with
-a higher computation cost. The variance of model output can be decomposed as equation (7), where n
-is the number of parameters, and $V_i$ is the variance of the $i_{th}$ parameter, and $V_{ij}$ is
-variance of iterative effect between the $i_{th}$ and $j_{th}$ parameters, and so on. The total
-sensitivity effect can be presented as equation (8), where $V_{-i}$ is the total variance except
-for the $x_i$ parameter. The Sobol results are showed as figure 2.  The screened out parameters are
-the same as the Morris.
-
-\begin{align}
-& V = \sum_{i=1}^n V_i + \sum_{1 \leq i < j \leq n} V_{ij} + ... + V_{1,2,...,n}  \\
-& S_{T_i} = 1 - \frac{V_{-i}}{V} 
-\end{align}
-$V_{-i}$ is the total variance except for $X_i$
-
-%\subsubsection{Pre-processing the initial values of the tuning algorithm}
-\subsubsection{The initial values preprocessed Downhill Simplex}
-
-Parameters tuning in climate system model is a global optimal problem. The popular evolutionary 
-algorithms, requires a population of individuals in each iterations, bringing in extremely 
-computation cost. Nevertheless, the downhill simplex searches the optimal solution by changing the 
-shape of a simplex , which represents the optimal direction and step, similar to the gradient 
-information of Newton optimal method. A simplex is 
-the geometry, consisting $N+1$ vertexes and their interconnecting edges, where N is the number of 
-calibration parameters screened by the 3.2.1 section. The vertexes stand for the pair of a set of 
-parameters and its metrics. The new vertex is determined by expanding and shrinking the vertex 
-with the highest metrics value, restructuring the new simplex. The detail of the downhill simplex 
-is described in \cite{press1992numerical} and \cite{nelder1965simplex}
-
-This optimal algorithm can be fast convergence when the dimension of calibration parameters is not high. If the simplex is a large span, it can jump out the local searching area by reflecting geometry and retractable transforming. Otherwise, it oozes down the valley area and traps into the local optimal space. Therefore, the searching speed rely heavily on the initial values of this method. It is necessary to sample in the full range to determine the likely area of the optimal solution. The full factor method
-is an equilibrium distance sampling strategy, and is suitable to analyze the parameters values
-sensitivity in the low dimension space. We use it to sample in the given range as shown table 1,
-and refine sampled in a sensitivity range. The parameter sets with the smaller metrics will be
-selected. It is likely that one of the initial value is near to the optimal solution. The down-hill
-simplex algorithm can converge toward this point.
-
-Besides, the inappropriate  initial values may lead to the ill-conditioned simplex geometry. It
-means that some parameters keep the same value in the initial values. These parameters can not
-change in the optimal algorithm. Consequently, as much as different sampled parameters values are
-required to select to improve the parameters freedom of initial values. The preprocessing initial 
-values of downhill simplex is presented as the Algorithm 1. 
-
-
-\section{Design of an end-to-end calibration workflow}
-Taken into account the complex configuration and operation of the ``three-steps'', resulting in the
-inefficient manipulation,  we design and implement the automatic parameters calibration workflow,
-as figure 1 shown. It consists of four components, dimension reducing, calibration algorithms, post
--processing, and tasks schedule. Meanwhile, it integrates some open source tools, such as PSUADE
-for sensitivity analysis, DAKOTA for calibration algorithms, NCO and NCL for metrics diagnostic. 
-The input of the framework is calibration parameters of interest and their initial value range. The
-output is the optimal parameters and its corresponding diagnostic results after calibrating with
-the ``three-steps'' or other strategy.
-
-Other than Morris and Sobol, the dimension reducing module also provide multi sampling methods,
-such as full factor, Latin Hypercube (LH),  Morris one-at-a-time (MOAT)  and Central Composite Designs (CCD), used to preprocessing the initial values of calibration
-algorithms and others sensitivity analysis. It could produce the duplicate sampling point in some sampling method, such as MOAT and CCD. The preprocessing module supports automatically eliminate duplicate points, reducing the unnecessary computing loads. As well, Markov Chain Monte Carlo (MCMC) method  based
-on adaptive Metropolis-Hastings algorithms is also provided to get the posterior distribution of
-uncertain parameters.  The calibration algorithm module offers the local and global optimization
-algorithms as figure 2 shown. Due to most of optimization algorithms and samplings require multi
-cases running synchronization, the schedule module supports flexible schedule to take fall use of
-computation resource. The post-processing module is response for metrics diagnostic, reanalysis and
-observation data management. Additional, all the intermediate metrics and their corresponding
-parameters are stored in DATABASE, used for posterior knowledge analysis.
-
 
 \section{The optimization results and mechanism analysis}
 
 \subsection{Comparison the effective and efficient with different strategies}
 
-We compare the effective and efficient performance among the ``three-steps'', ``two-steps'' of
-initial values pre-processing and down-hill simplex, and ``one-step'' directly using optimal
-algorithms with downhill simplex, differential evolution (DE) and particle swarm optimization (PSO)
-, as showed in table 3. The ``two-steps'' and ``three-steps'' are required extra 25 samples for the
-initial values pre-processing and 80 samples for parameters space reducing. The 3rd column in table
-3 is the number of iterations when each method gets the optimal solution in the 2nd column. The
-real iteration steps are greater than the number in table 3. The size of population of DE and PSO
-is set as 12. The effective of each strategy is evaluated by the optimal solution, and the
-efficiency is evaluated by the core hours, computed as $N_{step} \times N_{size} \times 30 \times 6
-$, where $N_{step}$ is the number of iterations, and $N_{size}$ is the size of population. The
-model runs as 30 processes, each assigned one core, and simulates 5 model years, about 6 hours. In
-the ``one- steps'' strategy, though the PSO gets a good optimal solution, it spends a expensive
-computational cost. On the contrary, the ``three-steps'' gets the best solution using half core
-hours than the PSO. The ``two-steps'' has the best efficiency, while the key factor, optimal
-solution is worse than the ``three-steps''.
+We compare the effective and efficient performance among the ``three-steps'', ``two-steps'' of initial values pre-processing and down-hill simplex (Tao Zhang et al., Quantification and optimization of parameter uncertainty in the Grid-point Atmospheric Model GAMIL2, manuscript in review, 2014), and ``one-step'' directly using optimal algorithms with downhill simplex, DE and PSO. The ``two-steps'' and ``three-steps'' require extra twenty-five samples for the initial values pre-processing. Eighty samples for parameters space reducing are required for the ``three-steps''. The 3rd column in table 3 is the number of iterations before each method gets the optimal solution in the 2nd column. The real iteration steps are greater than the number in table 3. The size of population of DE and PSO is set as twelve. The effective of each strategy is evaluated by the optimal solution, and the efficiency is evaluated by the core hours, computed as $N_{step} \times N_{size} \times 30 \times 6$, where $N_{step}$ is the number of iterations, and $N_{size}$ is the size of population. The model runs as thirty processes, each assigned one core, and simulates five model years, about six hours. In the ``one-steps'' strategy, though the PSO gets a good optimal solution, it spends a expensive computational cost. On the contrary, the ``three-steps'' gets the best solution using half core hours than the PSO. The ``two-steps'' has the best efficiency, while the key factor, optimal solution is worse than the ``three-steps''.
+
 
 \subsection{The optimal mechanism analysis}
 
-Figure 4 shows the metrics of each variables with the global, tropic, and northern / southern
-middle and high latitudes (NMHL / SMHL). Most variables of global are improved compared with CNL.
-Specific Humidity at 400hPa (Q400) is the best improved. Two variables, Meridional wind at 200hPa
-(V200) and clearsky short wave net flux at TOA (FSNTOAC), keep the same magnitude. 850hPa and
-200hPa temperature are worse than CNL. From the spatial distribution perspective, the SMHL
-contributes the best improved.
+Figure 4 exhibits the taylor diagram of the 16 variables of three years climate mean state from 2002 to 2004.  No variable of EXP becomes seriously worse than CNTL. Instead,  Zonal wind at 850hPa (U850),  Zonal wind at 200hPa (U200), Meridional wind at 850hPa (V850), Meridional wind at 200hPa (V200), and Specific Humidity at 400hPa (Q400) have been obviously improved. Figure 5 shows the metrics of each variables with the global, tropic, and northern / southern middle and high latitudes (NMHL / SMHL). Most variables of global are improved compared with CNTL. Specific Humidity at 400hPa (Q400) is the best improved. Two variables, Meridional wind at 200hPa (V200) and clearsky short wave net flux at TOA (FSNTOAC), keep the same magnitude. 850hPa and 200hPa temperature are worse than CNTL. From the spatial distribution perspective, the SMHL contributes the best improved
 
-Figure 4 presents the improvement of the entire radiation variables. It owes to the specific
-humidity and cloud improvement in the middle and upper troposphere. The EXP consumes the more
-water vapor and gets the better simulation than CNTL in this vertical height, shown as figure
-5. The decrease of the atmospheric water vapor reduces the its greenhouse effect. Therefore, it
-emits the more outgoing long-wave radiation in clean sky, reducing the simulation error of clear
-sky long wave upward flux at TOA (FLUTC), shown as figure 7(a).
 
-Compared with CNTL, the middle and high cloud significantly increase, as a result of the reducing
-rhminh parameter, shown as figure 6. Consequently, it enhances the blocking effect on the long wave
-upward flux at TOA (FLUT), reducing the FLUT in 30$^\circ$-60$^\circ$ of the southern and northern
-hemisphere in cloud, shown as figure 7(b). Taken into account the long wave cloud forcing (LWCF)
-computed as $FLUTC - FLUT$, the LWCF should increase, because of the increasing FLUTC and  the
-decreasing FLUT, shown as figure 7(c).
+Figure 5 presents the improvement of the entire radiation variables. It could be attributed to the specific humidity and cloud improvement in the middle and upper troposphere. The EXP consumes the more water vapor and gets the better simulation than CNTL above 700hPa, shown as figure 6. The decrease of the atmospheric water vapor reduces the its greenhouse effect. Therefore, it emits the more outgoing long-wave radiation in clear sky, reducing the negative bias of clear sky long wave upward flux at TOA (FLUTC), shown as figure 8(a).
+
+
+Compared with CNTL, the middle and high cloud significantly increase, as a result of the reducing rhminh parameter, shown as figure 7. Consequently, it enhances the blocking effect on the long wave upward flux at TOA (FLUT), reducing the FLUT in 30$^\circ$-60$^\circ$ of the southern and northern hemisphere, shown as figure 8(b). Taken into account the long wave cloud forcing (LWCF) computed as $FLUTC - FLUT$, the improvement of FLUTC in tropical is make up for the increasing bias of FLUT. Therefore, the LWCF in tropical stays the same with CNTL. But the LWCF in the middle and high latitudes is improved due to the improvement of FLUT in this area, shown as figure 8(c). 
+
 
 
 \conclusions  %% \conclusions[modified heading if necessary]  
@@ -390,7 +260,7 @@ entirely improved. The mechanism analysis explores that the reduced simulation e
 vapor has direct effect on the FLUT, and via cloud fraction indirectly influences the FLUTC. The 
 LWCF is improved under the improved FLUT and FLUTC.
 
-For future work, we plan to test the DE and PSO in the ``three-steps''. We will also develop the computation cheap surrogate model, because the high computational cost is the one of the biggest challenge for calibrating the climate system model. Besides, the optimal results need more mechanism analysis to deeply understand the physical parameterization processes.  
+For future work, we plan to test the DE and PSO in the ``three-steps''. We will also develop the computation cheap surrogate model, because the high computational cost is the one of the biggest challenge for calibrating the climate system model. Besides, the optimal results need more mechanism analysis to deeply understand the model uncertain source.  
 % \appendix
 % \section{}    %% Appendix A
 
@@ -450,17 +320,22 @@ For future work, we plan to test the DE and PSO in the ``three-steps''. We will 
 %f
 \begin{figure}[t]
 \includegraphics[width=8.3cm]{Morris}
-\caption{Morris results}
+\caption{Morris sensitivity scatter diagram. c0, rhminl, rhminh, and cmftau have the high sensitivity. ke, c0\_shc, and capelmt have the low sensitivity.}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=8.3cm]{Sobol}
-\caption{Sobol results}
+\caption{Sobol sensitivity results. The total sensitivity of ke, c0\_shc, and capelmt with regard to each variable is not more than 0.5.}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=15.3cm]{workflow}
-\caption{calibration workflow}
+\caption{The structure of the automatic calibration workflow}
+\end{figure}
+
+\begin{figure}[t]
+\includegraphics[width=12cm]{taylor}
+\caption{Taylor diagram of each variables climate mean state from 2002 to 2004 of EXP and CNTL.}
 \end{figure}
 
 \begin{figure}[t]

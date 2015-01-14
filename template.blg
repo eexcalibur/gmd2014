@@ -3,48 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template.aux
 The style file: copernicus.bst
 Database file #1: uq.bib
-Warning--empty journal in swileruncertainty
-Warning--empty year in swileruncertainty
-Warning--empty year in zhang2014quantification
-You've used 38 entries,
+You've used 43 entries,
             2811 wiz_defined-function locations,
-            1235 strings with 16494 characters,
-and the built_in function-call counts, 39780 in all, are:
-= -- 4650
-> -- 1446
-< -- 17
-+ -- 696
-- -- 450
-* -- 2345
-:= -- 3870
-add.period$ -- 38
-call.type$ -- 38
-change.case$ -- 223
-chr.to.int$ -- 38
-cite$ -- 117
-duplicate$ -- 4058
-empty$ -- 1954
-format.name$ -- 570
-if$ -- 7861
+            1256 strings with 17263 characters,
+and the built_in function-call counts, 41482 in all, are:
+= -- 4727
+> -- 1520
+< -- 22
++ -- 718
+- -- 471
+* -- 2475
+:= -- 4134
+add.period$ -- 43
+call.type$ -- 43
+change.case$ -- 240
+chr.to.int$ -- 43
+cite$ -- 129
+duplicate$ -- 4205
+empty$ -- 2141
+format.name$ -- 606
+if$ -- 8207
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 406
-newline$ -- 123
-num.names$ -- 152
-pop$ -- 1732
+missing$ -- 445
+newline$ -- 138
+num.names$ -- 172
+pop$ -- 1802
 preamble$ -- 1
-purify$ -- 223
+purify$ -- 240
 quote$ -- 0
-skip$ -- 2465
+skip$ -- 2523
 stack$ -- 0
-substring$ -- 1788
-swap$ -- 3540
-text.length$ -- 2
+substring$ -- 1779
+swap$ -- 3571
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 342
-warning$ -- 3
-while$ -- 209
+type$ -- 381
+warning$ -- 0
+while$ -- 224
 width$ -- 0
-write$ -- 421
-(There were 3 warnings)
+write$ -- 477

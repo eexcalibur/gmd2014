@@ -87,7 +87,7 @@
 			"file": "uq.bib",
 			"settings":
 			{
-				"buffer_size": 12532,
+				"buffer_size": 15336,
 				"line_ending": "Unix"
 			}
 		},
@@ -95,7 +95,7 @@
 			"file": "template.tex",
 			"settings":
 			{
-				"buffer_size": 37129,
+				"buffer_size": 40638,
 				"line_ending": "Windows"
 			}
 		}
@@ -103,9 +103,33 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 87.0,
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"log",
+				"Git: Log Current File"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"init",
+				"Git: Init"
+			],
 			[
 				"ini",
 				"Git: Init"
@@ -115,16 +139,8 @@
 				"Git: Status"
 			],
 			[
-				"add",
-				"Git: Add..."
-			],
-			[
 				"co",
 				"Git: Commit"
-			],
-			[
-				"init",
-				"Git: Init"
 			],
 			[
 				"instal",
@@ -173,18 +189,6 @@
 			[
 				"pull",
 				"Git: Pull"
-			],
-			[
-				"push",
-				"Git: Push"
-			],
-			[
-				"com",
-				"Git: Commit"
-			],
-			[
-				"comm",
-				"Git: Commit"
 			],
 			[
 				"git pu",
@@ -304,6 +308,7 @@
 	},
 	"file_history":
 	[
+		"/Users/zhangtao/我的坚果云/Copernicus_LaTeX_Package/gmd14.sublime-project",
 		"/Users/zhangtao/我的坚果云/Copernicus_LaTeX_Package/template.tex",
 		"/Users/zhangtao/我的坚果云/Copernicus_LaTeX_Package/uq.bib",
 		"/D/nut/我的坚果云/Copernicus_LaTeX_Package/uq.bib",
@@ -321,7 +326,6 @@
 		"/Users/zhangtao/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/zhangtao/Downloads/list.cpp",
 		"/Users/zhangtao/我的坚果云/Copernicus_LaTeX_Package/zhangtao.bib",
-		"/Users/zhangtao/我的坚果云/Copernicus_LaTeX_Package/gmd14.sublime-project",
 		"/Users/zhangtao/Documents/work/2014work/gmd/Copernicus_LaTeX_Package/template.tex",
 		"/Users/zhangtao/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
 		"/Users/zhangtao/Downloads/latex.tex",
@@ -361,6 +365,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\nimmediate",
 			"preconditioned",
 			"algo",
 			"indi",
@@ -399,15 +404,15 @@
 					"file": "uq.bib",
 					"settings":
 					{
-						"buffer_size": 12532,
+						"buffer_size": 15336,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12531,
-								12531
+								8228,
+								8228
 							]
 						],
 						"settings":
@@ -417,7 +422,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5458.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -427,23 +432,24 @@
 					"file": "template.tex",
 					"settings":
 					{
-						"buffer_size": 37129,
+						"buffer_size": 40638,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1836,
-								1836
+								2725,
+								2725
 							]
 						],
 						"settings":
 						{
+							"spell_check": true,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1016.0,
+						"translation.y": 1440.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

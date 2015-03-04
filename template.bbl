@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -34,6 +34,10 @@ Barkstrom, B.~R.: The earth radiation budget experiment (ERBE), Bulletin of the
 Beven, K. and Binley, A.: The future of distributed models: model calibration
   and uncertainty prediction, Hydrological processes, 6, 279--298, 1992.
 
+\bibitem[{Burnash et~al.()Burnash, Ferral, and R.A.}]{Burnash1973}
+Burnash, R., Ferral, R., and R.A., M.: A generalized streamflow simulation
+  system, report, Joint Fed.-State River Forecast Cent, Sacramento,Calif.
+
 \bibitem[{Cameron et~al.(1999)Cameron, Beven, Tawn, Blazkova, and
   Naden}]{cameron1999flood}
 Cameron, D., Beven, K.~J., Tawn, J., Blazkova, S., and Naden, P.: Flood
@@ -45,6 +49,13 @@ Cameron, D., Beven, K.~J., Tawn, J., Blazkova, S., and Naden, P.: Flood
 Campolongo, F., Cariboni, J., and Saltelli, A.: An effective screening design
   for sensitivity analysis of large models, Environmental modelling \&
   software, 22, 1509--1518, 2007.
+
+\bibitem[{Collins et~al.(2004)Collins, Rasch, Boville, Hack, McCaa, Williamson,
+  Kiehl, Briegleb, Bitz, Lin et~al.}]{collins2004description}
+Collins, W.~D., Rasch, P.~J., Boville, B.~A., Hack, J.~J., McCaa, J.~R.,
+  Williamson, D.~L., Kiehl, J.~T., Briegleb, B., Bitz, C., Lin, S., et~al.:
+  Description of the NCAR community atmosphere model (CAM 3.0), Tech. rep.,
+  Tech. Rep. NCAR/TN-464+ STR, 2004.
 
 \bibitem[{Eldred et~al.(2007)Eldred, Agarwal, Perez, Wojtkiewicz~Jr, and
   Renaud}]{eldred2007investigation}
@@ -70,6 +81,12 @@ Gleckler, P.~J., Taylor, K.~E., and Doutriaux, C.: Performance metrics for
 \bibitem[{Goldberg et~al.(1989)Goldberg, Korb, and Deb}]{goldberg1989messy}
 Goldberg, D.~E., Korb, B., and Deb, K.: Messy genetic algorithms: Motivation,
   analysis, and first results, Complex systems, 3, 493--530, 1989.
+
+\bibitem[{Haagenson et~al.(1994)Haagenson, Dudhia, Grell, and
+  Stauffer}]{haagenson1994penn}
+Haagenson, P.~L., Dudhia, J., Grell, G., and Stauffer, D.: The Penn State/NCAR
+  mesoscale model (MM5) source code documentation, Mesoscale and Microscale
+  Meteorology Division, 1994.
 
 \bibitem[{Hack et~al.(1994)Hack, Boville, Kiehl, Rasch, and
   Williamson}]{hack1994climate}
@@ -107,6 +124,23 @@ Jackson, C.~S., Sen, M.~K., Huerta, G., Deng, Y., and Bowman, K.~P.: Error
   reduction and convergence in climate prediction, Journal of Climate, 21,
   6698--6709, 2008.
 
+\bibitem[{Kennedy(2010)}]{kennedy2010particle}
+Kennedy, J.: Particle swarm optimization, in: Encyclopedia of Machine Learning,
+  pp. 760--766, Springer, 2010.
+
+\bibitem[{Lawrence et~al.(2011)Lawrence, Oleson, Flanner, Thornton, Swenson,
+  Lawrence, Zeng, Yang, Levis, Sakaguchi et~al.}]{lawrence2011parameterization}
+Lawrence, D.~M., Oleson, K.~W., Flanner, M.~G., Thornton, P.~E., Swenson,
+  S.~C., Lawrence, P.~J., Zeng, X., Yang, Z.-L., Levis, S., Sakaguchi, K.,
+  et~al.: Parameterization improvements and functional and structural advances
+  in version 4 of the Community Land Model, Journal of Advances in Modeling
+  Earth Systems, 3, 2011.
+
+\bibitem[{Lawrence and Chase(2007)}]{lawrence2007representing}
+Lawrence, P.~J. and Chase, T.~N.: Representing a new MODIS consistent land
+  surface in the Community Land Model (CLM 3.0), Journal of Geophysical
+  Research: Biogeosciences (2005--2012), 112, 2007.
+
 \bibitem[{Li et~al.(2013)Li, Wang, Dong, Liu, Shen, Hu, Sun, Wang, Huang, Shi
   et~al.}]{li2013evaluation}
 Li, L., Wang, B., Dong, L., Liu, L., Shen, S., Hu, N., Sun, W., Wang, Y.,
@@ -118,6 +152,14 @@ Li, L., Wang, B., Dong, L., Liu, L., Shen, S., Hu, N., Sun, W., Wang, Y.,
 Liang, F., Cheng, Y., and Lin, G.: Simulated Stochastic Approximation Annealing
   for Global Optimization with a Square-Root Cooling Schedule, Journal of the
   American Statistical Association, 2013.
+
+\bibitem[{Michalakes et~al.(2001)Michalakes, Chen, Dudhia, Hart, Klemp,
+  Middlecoff, and Skamarock}]{michalakes2001development}
+Michalakes, J., Chen, S., Dudhia, J., Hart, L., Klemp, J., Middlecoff, J., and
+  Skamarock, W.: Development of a next generation regional weather research and
+  forecast model, in: Developments in Teracomputing: Proceedings of the Ninth
+  ECMWF Workshop on the use of high performance computing in meteorology,
+  vol.~1, pp. 269--276, World Scientific, 2001.
 
 \bibitem[{Morris(1991)}]{morris1991factorial}
 Morris, M.~D.: Factorial sampling plans for preliminary computational
@@ -138,6 +180,29 @@ Murphy, J.~M., Sexton, D.~M., Barnett, D.~N., Jones, G.~S., Webb, M.~J.,
 \bibitem[{Nelder and Mead(1965)}]{nelder1965simplex}
 Nelder, J.~A. and Mead, R.: A simplex method for function minimization, The
   computer journal, 7, 308--313, 1965.
+
+\bibitem[{Oleson et~al.(2008)Oleson, Niu, Yang, Lawrence, Thornton, Lawrence,
+  St{\"o}ckli, Dickinson, Bonan, Levis et~al.}]{oleson2008improvements}
+Oleson, K., Niu, G.-Y., Yang, Z.-L., Lawrence, D., Thornton, P., Lawrence, P.,
+  St{\"o}ckli, R., Dickinson, R., Bonan, G., Levis, S., et~al.: Improvements to
+  the Community Land Model and their impact on the hydrological cycle, Journal
+  of Geophysical Research: Biogeosciences (2005--2012), 113, 2008.
+
+\bibitem[{Oleson et~al.(2004)Oleson, Dai, Bonan, Bosilovich, Dickinson,
+  Dirmeyer, Hoffman, Houser, Levis, Niu et~al.}]{oleson2004technical}
+Oleson, K.~W., Dai, Y., Bonan, G., Bosilovich, M., Dickinson, R., Dirmeyer, P.,
+  Hoffman, F., Houser, P., Levis, S., Niu, G.-Y., et~al.: Technical description
+  of the community land model (CLM), Tech. rep., NCAR Technical Note
+  NCAR/TN-461+ STR, National Center for Atmospheric Research, Boulder, CO,
+  2004.
+
+\bibitem[{Parton et~al.(1993)Parton, Scurlock, Ojima, Gilmanov, Scholes,
+  Schimel, Kirchner, Menaut, Seastedt, Garcia~Moya
+  et~al.}]{parton1993observations}
+Parton, W., Scurlock, J., Ojima, D., Gilmanov, T., Scholes, R., Schimel, D.~S.,
+  Kirchner, T., Menaut, J.-C., Seastedt, T., Garcia~Moya, E., et~al.:
+  Observations and modeling of biomass and soil organic matter dynamics for the
+  grassland biome worldwide, Global biogeochemical cycles, 7, 785--809, 1993.
 
 \bibitem[{Press et~al.(1992)Press, Teukolsky, Vetterling, and
   Flannery}]{press1992numerical}

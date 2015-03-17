@@ -352,17 +352,17 @@ In the future, we plan to evaluate the computation-cheap surrogate model, furthe
 
 \begin{table}[t]
 \caption{Initial selected uncertain parameters in GAMIL2.}
-\begin{tabular}{l l l c}
+\begin{tabular}{l l l c l}
 \tophline
-Parameter & Description & Default & Range \\
+Parameter & Description & Default & Range & Optimal \\
 \middlehline
-c0 & rain water autoconversion coefficient for deep convection & 3.0e-4 & 1.e-4 $\sim$ 5.4e-3 \\
-ke & evaporation efficiency for deep convection & 7.5e-6 & 5e-7 $\sim$ 5e-5 \\
-capelmt & threshold value for cape for deep convection & 80 & 20 $\sim$ 200 \\
-rhminl & threshold RH for low clouds & 0.915 & 0.8 $\sim$ 0.95 \\
-rhminh & threshold RH for high clouds & 0.78 & 0.6 $\sim$ 0.9 \\
-c0\_shc & rain water autoconversion coefficient for shallow convection & 5e-5 & 3e-5 $\sim$ 2e-4 \\
-cmftau & characteristic adjustment time scale of shallow cape & 7200 & 900 $\sim$ 14400 \\
+c0 & rain water autoconversion coefficient for deep convection & 3.0e-4 & 1.e-4 $\sim$ 5.4e-3 & 5.427294e-4\\
+ke & evaporation efficiency for deep convection & 7.5e-6 & 5e-7 $\sim$ 5e-5 & -- \\
+capelmt & threshold value for cape for deep convection & 80 & 20 $\sim$ 200 & -- \\
+rhminl & threshold RH for low clouds & 0.915 & 0.8 $\sim$ 0.95 & 0.917661 \\
+rhminh & threshold RH for high clouds & 0.78 & 0.6 $\sim$ 0.9 & 0.6289215 \\
+c0\_shc & rain water autoconversion coefficient for shallow convection & 5e-5 & 3e-5 $\sim$ 2e-4 & -- \\
+cmftau & characteristic adjustment time scale of shallow cape & 7200 & 900 $\sim$ 14400 & 7198.048  \\
 \bottomhline
 \end{tabular}
 \belowtable{} % Table Footnotes
@@ -393,19 +393,17 @@ Specific Humidity at 400hPa & ECMWF & Clearsky short-wave net flux at TOA   & ER
 \tophline
 ID & c0 & rhminl & rhminh & cmftau & metrics & ID & c0 & rhminl & rhminh & cmftau & metrics \\
 \middlehline
-1  & 1.00E-04 & 0.915 & 0.78 & 7200 & 1.152 & 14 & 3.00E-04  & 0.875 & 0.78  & 7200  & 1.019     \\
-2  & 3.00E-04 & 0.915 & 0.78 & 7200 & 1     & 15 & 3.00E-04  & 0.913 & 0.78  & 7200  & 1.007     \\
-3  & 3.04E-04 & 0.915 & 0.78 & 7200 & 1.054 & 16 & 3.00E-04  & 0.95  & 0.78  & 7200  & 1.094     \\
-4  & 5.08E-04 & 0.915 & 0.78 & 7200 & 1.017 & 17 & 3.00E-04  & 0.915 & 0.6   & 7200  & 1.00547   \\
-5  & 7.13E-04 & 0.915 & 0.78 & 7200 & 0.987 & 18 & 3.00E-04  & 0.915 & 0.675 & 7200  & 1.027676  \\
-6  & 9.17E-04 & 0.915 & 0.78 & 7200 & 1.01  & 19 & 3.00E-04  & 0.915 & 0.75  & 7200  & 1.023358  \\
-7  & 1.12E-03 & 0.915 & 0.78 & 7200 & 1.04  & 20 & 3.00E-04  & 0.915 & 0.825 & 7200  & 1.028264  \\
-8  & 1.33E-03 & 0.915 & 0.78 & 7200 & 1.044 & 21 & 3.00E-04  & 0.915 & 0.9   & 7200  & 1.160479  \\
-9  & 2.55E-03 & 0.915 & 0.78 & 7200 & 1.075 & 22 & 3.00E-04  & 0.915 & 0.78  & 900   & 1.22922   \\
-10 & 3.78E-03 & 0.915 & 0.78 & 7200 & 1.084 & 23 & 3.00E-04  & 0.915 & 0.78  & 4275  & 1.064064  \\
-11 & 5.00E-03 & 0.915 & 0.78 & 7200 & 1.09  & 24 & 3.00E-04  & 0.915 & 0.78  & 7650  & 1.004806  \\
-12 & 3.00E-04 & 0.8   & 0.78 & 7200 & 1.223 & 25 & 3.00E-04  & 0.915 & 0.78  & 11025 & 1.077167  \\
-13 & 3.00E-04 & 0.838 & 0.78 & 7200 & 1.054 & 26 & 3.00E-04  & 0.915 & 0.78  & 14400 & 1.148265  \\
+1  & 3.00E-04 & 0.915 & 0.78 & 7200 & 1     & 12 & 3.00E-04 & 0.915 & 0.6   & 7200  & 1.00547 \\
+2  & 3.04E-04 & 0.915 & 0.78 & 7200 & 1.054 & 13 & 3.00E-04 & 0.915 & 0.675 & 7200  & 1.027676\\
+3  & 7.13E-04 & 0.915 & 0.78 & 7200 & 0.987 & 14 & 3.00E-04 & 0.915 & 0.75  & 7200  & 1.023358\\
+4  & 1.12E-03 & 0.915 & 0.78 & 7200 & 1.04  & 15 & 3.00E-04 & 0.915 & 0.825 & 7200  & 1.028264\\
+5  & 2.55E-03 & 0.915 & 0.78 & 7200 & 1.075 & 16 & 3.00E-04 & 0.915 & 0.9   & 7200  & 1.160479\\
+6  & 5.00E-03 & 0.915 & 0.78 & 7200 & 1.09  & 17 & 3.00E-04 & 0.915 & 0.78  & 900   & 1.22922 \\
+7  & 3.00E-04 & 0.8   & 0.78 & 7200 & 1.223 & 18 & 3.00E-04 & 0.915 & 0.78  & 4275  & 1.064064\\
+8  & 3.00E-04 & 0.838 & 0.78 & 7200 & 1.054 & 19 & 3.00E-04 & 0.915 & 0.78  & 7650  & 1.004806\\
+9  & 3.00E-04 & 0.875 & 0.78 & 7200 & 1.019 & 20 & 3.00E-04 & 0.915 & 0.78  & 11025 & 1.077167\\
+10 & 3.00E-04 & 0.913 & 0.78 & 7200 & 1.007 & 21 & 3.00E-04 & 0.915 & 0.78  & 14400 & 1.148265\\
+11 & 3.00E-04 & 0.95  & 0.78 & 7200 & 1.094 \\
 \bottomhline
 \end{tabular}
 \belowtable{} % Table Footnotes
@@ -505,13 +503,25 @@ Downhill\_3\_steps  & 0.9098545 & 80+25+50 &  1 & 27900 \\
 %\STATE !********************************************
 %\STATE !(1) Setting the initial values
 %\STATE !******************************************** 
-\STATE sampling\_sets=full\_factor\_sampling(parameters\_range)
+\STATE //full factor sample 
+\STATE sampling\_sets=full\_factor\_sampling(parameters\_range,number\_of\_factors) 
+\STATE //refine full factor sample in the sensitivity range if needed
+\IF{metrics of the the adjacent same parameter sampling points >= }
+\STATE sampling\_sets+=full\_factor\_sampling(adjacent\_parameter\_range,refine\_number\_of\_factors)
+\ENDIF
+\STATE
+\STATE //Initial vertexes with parameters of the N+1 minimum metrics
+\STATE N=number\_of\_parameters 
 \FOR{each initial $V_i$ of N+1 vertexes}
-\STATE candidate\_init\_sets += min(i, sampling\_sets)
+\STATE //get the parameters of the $i_{th}$ minimum metrics
+\STATE candidate\_init\_sets += min(i, sampling\_sets) 
 \ENDFOR
+\STATE
+\STATE //make sure the initial simplex geometry is well-conditioned
 \WHILE{one parameter have the same values in the N+1 sets}
 \STATE j=1
 \STATE remove\_parameter\_set(the parameter set with higher metrics, candidate\_init\_sets)
+\STATE //get the parameters of the $N+1+j_{th}$ minimum metrics
 \STATE candidate\_init\_sets += min(N+1+j, sampling\_sets)
 \STATE j+=1
 \ENDWHILE

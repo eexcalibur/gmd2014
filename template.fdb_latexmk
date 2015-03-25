@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex template"] 1425984928 "template.aux" "template.bbl" "template" 1426059745
+["bibtex template"] 1427212449 "template.aux" "template.bbl" "template" 1427276236
   "./copernicus.bst" 1400544204 38958 80a59dbc701e066540b9b47c2a8882d6 ""
-  "template.aux" 1426059745 11172 1684967b469b026891730eb075c9c2bc ""
+  "template.aux" 1427212451 12834 816e673f712f89be9f78ccdbe29d5a7b ""
   "template.bcf" 0 -1 0 ""
   "uq.bib" 1425455945 19123 d604b5ed1afb105652ac7aa7f48131e2 ""
   (generated)
-  "template.bbl"
   "template.blg"
-["pdflatex"] 1426059744 "template.tex" "template.pdf" "template" 1426059745
+  "template.bbl"
+["pdflatex"] 1427212450 "template.tex" "template.pdf" "template" 1427276236
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def" 1368743226 42950 b2c89311c96d7b70c24e1365a2fa51ee ""
@@ -87,13 +87,13 @@
   "copernicus.cfg" 1407369078 34632 10dac047823e6ff97fd12c3ef3530b53 ""
   "copernicus.cls" 1407369078 74666 7429e26cb8724c3621dce2d402f67739 ""
   "natbib.sty" 1400544204 36896 52c8390773d6d422f163602cfe494377 ""
-  "radiation_curve.pdf" 1415959483 91829 033d67faf1d9b422962bb7c76124652c ""
+  "radiation_curve.pdf" 1427178123 362934 6bd6c3b3ea00e3300372a8a9ab9821e9 ""
   "reg.pdf" 1415885201 30748 312e2bec51333489e7276109aa65b0d4 ""
-  "shum.pdf" 1415940990 97744 cadcb1540eb165000d53145b7f9e7fb9 ""
+  "rh.pdf" 1427210246 225617 7bd92a1fce0305890d9495174d0c3266 ""
   "taylor.pdf" 1421142130 326450 c7506cd723bc013f277e3b9535bf4571 ""
-  "template.aux" 1426059745 11172 1684967b469b026891730eb075c9c2bc ""
-  "template.bbl" 1425984929 15540 941d2a8e6be1d160017c18fb0c85155f "bibtex template"
-  "template.tex" 1426059744 43792 db6014a4753f4493e3f2451d3ef922a0 ""
+  "template.aux" 1427212451 12834 816e673f712f89be9f78ccdbe29d5a7b ""
+  "template.bbl" 1427212449 15380 fc30c2719ce10cfd84ec8d267c8355a9 "bibtex template"
+  "template.tex" 1427212447 46927 eb2abbbeac4b5a10a6ebeebb9c74769a ""
   "workflow.pdf" 1415820567 95328 d90136ab31bf63da64e92f570b35e3fe ""
   (generated)
   "Morris-eps-converted-to.pdf"

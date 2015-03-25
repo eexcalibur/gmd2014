@@ -18,45 +18,45 @@ while executing---line 3341 of file copernicus.bst
 Name 2 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
 while executing---line 3341 of file copernicus.bst
 Warning--empty year in Burnash1973
-You've used 53 entries,
+You've used 52 entries,
             2811 wiz_defined-function locations,
-            1305 strings with 19976 characters,
-and the built_in function-call counts, 50695 in all, are:
-= -- 5483
-> -- 2186
-< -- 27
-+ -- 962
-- -- 687
-* -- 3184
-:= -- 5306
-add.period$ -- 53
-call.type$ -- 53
-change.case$ -- 329
-chr.to.int$ -- 53
-cite$ -- 160
-duplicate$ -- 4931
-empty$ -- 2613
-format.name$ -- 852
-if$ -- 10014
+            1299 strings with 19872 characters,
+and the built_in function-call counts, 49641 in all, are:
+= -- 5349
+> -- 2176
+< -- 25
++ -- 952
+- -- 684
+* -- 3142
+:= -- 5219
+add.period$ -- 52
+call.type$ -- 52
+change.case$ -- 326
+chr.to.int$ -- 52
+cite$ -- 157
+duplicate$ -- 4808
+empty$ -- 2545
+format.name$ -- 848
+if$ -- 9789
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 583
-newline$ -- 168
-num.names$ -- 212
-pop$ -- 2243
+missing$ -- 575
+newline$ -- 165
+num.names$ -- 208
+pop$ -- 2192
 preamble$ -- 1
-purify$ -- 327
+purify$ -- 324
 quote$ -- 0
-skip$ -- 2880
+skip$ -- 2804
 stack$ -- 0
-substring$ -- 1970
-swap$ -- 4089
-text.length$ -- 6
+substring$ -- 1911
+swap$ -- 3985
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 468
+type$ -- 459
 warning$ -- 1
-while$ -- 265
+while$ -- 258
 width$ -- 0
-write$ -- 587
+write$ -- 575
 (There were 7 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.30)  24 MAR 2015 23:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.30)  27 MAR 2015 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,10 +948,10 @@ Overfull \hbox (36.98866pt too wide) in paragraph at lines 319--320
  [][] 
  []
 
-<rh.pdf, id=281, 597.23125pt x 845.1575pt>
-File: rh.pdf Graphic file (type pdf)
- <use rh.pdf>
-Package pdftex.def Info: rh.pdf used on input line 324.
+<cloud-rh.pdf, id=281, 597.23125pt x 845.1575pt>
+File: cloud-rh.pdf Graphic file (type pdf)
+ <use cloud-rh.pdf>
+Package pdftex.def Info: cloud-rh.pdf used on input line 324.
 (pdftex.def)             Requested size: 435.32724pt x 616.04424pt.
 
 Overfull \hbox (36.98866pt too wide) in paragraph at lines 324--325
@@ -959,35 +959,24 @@ Overfull \hbox (36.98866pt too wide) in paragraph at lines 324--325
  []
 
 
-LaTeX Warning: Float too large for page by 20.12248pt on input line 326.
+LaTeX Warning: Float too large for page by 35.1849pt on input line 326.
 
-<cloud.pdf, id=282, 614.295pt x 794.97pt>
-File: cloud.pdf Graphic file (type pdf)
- <use cloud.pdf>
-Package pdftex.def Info: cloud.pdf used on input line 329.
-(pdftex.def)             Requested size: 435.32724pt x 563.36519pt.
+<radiation-curve.pdf, id=282, 845.1575pt x 597.23125pt>
+File: radiation-curve.pdf Graphic file (type pdf)
 
-Overfull \hbox (36.98866pt too wide) in paragraph at lines 329--330
- [][] 
- []
-
-<radiation_curve.pdf, id=283, 845.1575pt x 597.23125pt>
-File: radiation_curve.pdf Graphic file (type pdf)
-
-<use radiation_curve.pdf>
-Package pdftex.def Info: radiation_curve.pdf used on input line 334.
+<use radiation-curve.pdf>
+Package pdftex.def Info: radiation-curve.pdf used on input line 334.
 (pdftex.def)             Requested size: 341.43306pt x 241.27586pt.
  [15 <./workflow.pdf>] [16 <./Morris.pdf> <./Sobol.pdf>] [17 <./taylor.pdf>] [1
-8 <./reg.pdf>] [19 <./rh.pdf>] [20 <./cloud.pdf>]
-[21 <./radiation_curve.pdf>]
+8 <./reg.pdf>] [19 <./cloud-rh.pdf>] [20 <./radiation-curve.pdf>]
 Overfull \hbox (39.75177pt too wide) in paragraph at lines 359--372
  []$[]$ 
  []
 
-[22] [23]
+[21] [22]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 532.
- [24
+ [23
 
 
 
@@ -1000,10 +989,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 599.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 599.
  ) 
 Here is how much of TeX's memory you used:
- 9196 strings out of 493315
- 127121 string characters out of 6137904
+ 9189 strings out of 493315
+ 127072 string characters out of 6137904
  239102 words of memory out of 5000000
- 12316 multiletter control sequences out of 15000+600000
+ 12312 multiletter control sequences out of 15000+600000
  42383 words of font info for 70 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,10n,34p,1942b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1024,10 +1013,10 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on template.pdf (24 pages, 1603032 bytes).
+Output written on template.pdf (23 pages, 1616345 bytes).
 PDF statistics:
- 977 PDF objects out of 1000 (max. 8388607)
- 705 compressed objects within 8 object streams
- 131 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 982 PDF objects out of 1000 (max. 8388607)
+ 706 compressed objects within 8 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

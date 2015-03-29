@@ -3,60 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template.aux
 The style file: copernicus.bst
 Database file #1: uq.bib
-Name 1 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
-while executing---line 3189 of file copernicus.bst
-Name 1 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
-while executing---line 3189 of file copernicus.bst
-Name 2 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
-while executing---line 3189 of file copernicus.bst
-Name 1 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
-while executing---line 3341 of file copernicus.bst
-Name 2 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
-while executing---line 3341 of file copernicus.bst
-Name 1 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
-while executing---line 3341 of file copernicus.bst
-Name 2 in "Burnash,R.J.E., and Ferral, R.L., and McGuire R.A." has a comma at the end for entry Burnash1973
-while executing---line 3341 of file copernicus.bst
-Warning--empty year in Burnash1973
-You've used 52 entries,
+Repeated entry---line 633 of file uq.bib
+ : @incollection{kennedy2010particle
+ :                                  ,
+I'm skipping whatever remains of this entry
+You've used 54 entries,
             2811 wiz_defined-function locations,
-            1299 strings with 19872 characters,
-and the built_in function-call counts, 49641 in all, are:
-= -- 5349
-> -- 2176
-< -- 25
-+ -- 952
-- -- 684
-* -- 3142
-:= -- 5219
-add.period$ -- 52
-call.type$ -- 52
-change.case$ -- 326
-chr.to.int$ -- 52
-cite$ -- 157
-duplicate$ -- 4808
-empty$ -- 2545
-format.name$ -- 848
-if$ -- 9789
+            1315 strings with 19179 characters,
+and the built_in function-call counts, 51852 in all, are:
+= -- 5893
+> -- 1882
+< -- 27
++ -- 888
+- -- 582
+* -- 3099
+:= -- 5158
+add.period$ -- 54
+call.type$ -- 54
+change.case$ -- 298
+chr.to.int$ -- 54
+cite$ -- 162
+duplicate$ -- 5260
+empty$ -- 2717
+format.name$ -- 752
+if$ -- 10289
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 575
-newline$ -- 165
-num.names$ -- 208
-pop$ -- 2192
+missing$ -- 556
+newline$ -- 171
+num.names$ -- 216
+pop$ -- 2286
 preamble$ -- 1
-purify$ -- 324
+purify$ -- 298
 quote$ -- 0
-skip$ -- 2804
+skip$ -- 3133
 stack$ -- 0
-substring$ -- 1911
-swap$ -- 3985
+substring$ -- 2218
+swap$ -- 4447
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 459
-warning$ -- 1
-while$ -- 258
+type$ -- 471
+warning$ -- 0
+while$ -- 283
 width$ -- 0
-write$ -- 575
-(There were 7 error messages)
+write$ -- 596
+(There was 1 error message)

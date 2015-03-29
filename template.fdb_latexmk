@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex template"] 1427448960 "template.aux" "template.bbl" "template" 1427448962
+["bibtex template"] 1427620837 "template.aux" "template.bbl" "template" 1427620839
   "./copernicus.bst" 1400544204 38958 80a59dbc701e066540b9b47c2a8882d6 ""
-  "template.aux" 1427448961 12713 f6dd12e61407e51ea6c691698c6b805c ""
+  "template.aux" 1427620839 12479 f7f9b1a9be81f16dab870aef3d52c810 ""
   "template.bcf" 0 -1 0 ""
-  "uq.bib" 1425455945 19123 d604b5ed1afb105652ac7aa7f48131e2 ""
+  "uq.bib" 1427561997 21969 e0f723ccfc6a6c2a6a32ea8a9d046274 ""
   (generated)
-  "template.bbl"
   "template.blg"
-["pdflatex"] 1427448960 "template.tex" "template.pdf" "template" 1427448962
+  "template.bbl"
+["pdflatex"] 1427620837 "template.tex" "template.pdf" "template" 1427620839
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def" 1368743226 42950 b2c89311c96d7b70c24e1365a2fa51ee ""
@@ -90,13 +90,13 @@
   "radiation-curve.pdf" 1427448776 228903 3aca129ce7d791cad45f943f4c8c4d52 ""
   "reg.pdf" 1415885201 30748 312e2bec51333489e7276109aa65b0d4 ""
   "taylor.pdf" 1421142130 326450 c7506cd723bc013f277e3b9535bf4571 ""
-  "template.aux" 1427448961 12713 f6dd12e61407e51ea6c691698c6b805c ""
-  "template.bbl" 1427448960 15380 fc30c2719ce10cfd84ec8d267c8355a9 "bibtex template"
-  "template.tex" 1427448958 46998 1d0382c3f807395b3bec31bd16e1051a ""
+  "template.aux" 1427620839 12479 f7f9b1a9be81f16dab870aef3d52c810 ""
+  "template.bbl" 1427620837 14533 2544853e414f288f4c940a9e0c9c9408 "bibtex template"
+  "template.tex" 1427620835 47932 ef6e384f6793425d6e560e26410a9740 ""
   "workflow.pdf" 1415820567 95328 d90136ab31bf63da64e92f570b35e3fe ""
   (generated)
-  "Morris-eps-converted-to.pdf"
-  "template.log"
-  "template.aux"
-  "reg-eps-converted-to.pdf"
   "template.pdf"
+  "template.log"
+  "reg-eps-converted-to.pdf"
+  "Morris-eps-converted-to.pdf"
+  "template.aux"
